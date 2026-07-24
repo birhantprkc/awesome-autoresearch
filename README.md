@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 76 entries
+- [Scientific Research](categories/scientific-research.md) — 77 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 137 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 152 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 154 entries
 
 ### Open categories still being seeded
 
@@ -150,6 +150,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 - [Writing-Driven Autoresearch](https://github.com/happyhappy-jun/writing-driven-autoresearch) - Scientific research: maintains a submittable paper from the first minute and runs a modify → measure → verify → revise loop in which every experiment must back a specific claim in the draft, rewriting or deleting claims the measurements falsify.
 - [low-light-geolocalization-autoresearch](https://github.com/akaalias/low-light-geolocalization-autoresearch) - UAV vision research: applies a Claude-driven autoresearch loop to train per-area scene-coordinate models for low-light visual geolocalization, targeting sub-$5 ESP32-P4 hardware deployment.
+- [autoMartiniAgent](https://github.com/ljding94/autoMartiniAgent) - Molecular dynamics research: combines an agent skill, MCP server, and autoresearch protocol to automate AA → Martini 3 coarse-grained mapping, applying keep/discard iteration to force-field parameter selection.
 - [qwen3-vl-autoresearch](https://github.com/mikhutchinson/qwen3-vl-autoresearch) - Vision-language research: applies leakage-controlled Qwen3-VL LoRA autoresearch on Apple Silicon, with an honest inconclusive confirmation study that explicitly reports when the loop found no reliable improvement despite rigorous experimental design.
 
 ### Software / Systems Optimization
@@ -624,6 +625,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [GPT 5.6 for autoresearch](https://x.com/askalphaxiv/status/2076737987833095473) - X/Twitter: alphaXiv tests GPT-5.6 on an interpretability paper reproduction and reports it stayed more focused on critical experiments with fewer clarification questions than GPT-5.5 or Fable 5, independently resolving ambiguities instead of pushing them back — suggesting frontier models are crossing a threshold where they can run autoresearch with less handholding.
 - [NVIDIA NeMo RL Autoresearch with Agent Skills](https://blogs.nvidia.com/blog/nemotron-rl-autoresearch-agent-skills/) - Tutorial: NVIDIA Nemotron Labs publishes an official guide on running RL autoresearch with NeMo RL, NeMo Gym, and reusable agent skills, demonstrating a Qwen3-VL-2B vision model improving from 25% to 96.9% accuracy on a counting task while the agent autonomously proposed the next experiment.
 - [Weco AI AIDE²: First Evidence of Recursive Self-Improvement](https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement) - Blog: Weco AI reports the first experimental evidence of an AI agent recursively self-improving — where an outer optimization loop (autoresearch) improves the inner agent's ability to run the loop itself, closing a meta-learning circle that has been theorized since the original autoresearch release.
+- [Autoresearch At Listen Labs](https://listenlabs.ai/blog/autoresearch-at-listen) - Blog: Listen Labs applies autoresearch to AI-led user interviews, iterating on question design and interview flow against real respondent engagement metrics.
+- [Autoresearch Just Turned Your Agent Into Its Own System Administrator](https://clawblog.com/autoresearch-self-improving-agents-governance-shift) - Blog: ClawBlog argues that autoresearch represents a governance shift where agents transition from executing tasks to managing and improving their own runtime infrastructure — becoming their own sysadmins.
 
 ## Submission format
 
