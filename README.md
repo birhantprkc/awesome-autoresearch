@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 138 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 154 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 141 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 155 entries
 
 ### Open categories still being seeded
 
@@ -439,6 +439,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autofrontier](https://github.com/mxmsbt/autofrontier) - Crown-gated recursive autoresearch: an agent hunts optimization angles overnight and codes them itself, but only gains that win on a private holdout take the throne — the same gated loop then recurses on the model, the search strategy, and the tool itself.
 - [canopy](https://github.com/jjackson/canopy) - Self-improving MCP orchestration: composes tools across projects with autoresearch-driven self-evolution, learning from usage patterns to auto-optimize tool composition and orchestration strategies.
 - [agent-collabs](https://github.com/huggingface/agent-collabs) - Collaborative autoresearch infrastructure: Hugging Face's official tooling for quickly setting up the infrastructure to run collaborative autoresearch projects, signaling mainstream platform adoption of the pattern.
+- [autoflash](https://github.com/recursive-org/autoflash) - LLM infrastructure autoresearch: Recursive's (Richard Socher) autoresearch tool for performance engineering on LLM infrastructure, applying the keep/discard loop to inference and training system optimization.
+- [autoresearch-ios](https://github.com/fomoPhil/autoresearch-ios) - iOS app optimization: a Claude Code skill that applies Karpathy-style auto-research loops to iOS apps via XcodeBuildMCP, measuring and iterating on Xcode build metrics.
+- [braided-autoresearch](https://github.com/poudelsubhan/braided-autoresearch) - Git DAG-based autoresearch: models autoresearch as a git DAG with bandit-scheduled lineages, agent-written semantic merges, and cross-lineage replication as a built-in reward-hacking detector.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
@@ -631,6 +634,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Weco AI AIDE²: First Evidence of Recursive Self-Improvement](https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement) - Blog: Weco AI reports the first experimental evidence of an AI agent recursively self-improving — where an outer optimization loop (autoresearch) improves the inner agent's ability to run the loop itself, closing a meta-learning circle that has been theorized since the original autoresearch release.
 - [Autoresearch At Listen Labs](https://listenlabs.ai/blog/autoresearch-at-listen) - Blog: Listen Labs applies autoresearch to AI-led user interviews, iterating on question design and interview flow against real respondent engagement metrics.
 - [Autoresearch Just Turned Your Agent Into Its Own System Administrator](https://clawblog.com/autoresearch-self-improving-agents-governance-shift) - Blog: ClawBlog argues that autoresearch represents a governance shift where agents transition from executing tasks to managing and improving their own runtime infrastructure — becoming their own sysadmins.
+- [Hiloop Launches Autoresearch Service](https://digg.com/tech/rjaq43ix) - News: Hiloop launches a commercial autoresearch service for AI improvement, marking one of the first productized offerings that packages the autoresearch loop as a paid service rather than an open-source pattern.
 
 ## Submission format
 
