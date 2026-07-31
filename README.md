@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 79 entries
+- [Scientific Research](categories/scientific-research.md) — 80 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 33 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 141 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 155 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 156 entries
 
 ### Open categories still being seeded
 
@@ -139,6 +139,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [repurpose-agent](https://github.com/RitataLU/repurpose-agent) - Drug repurposing research: applies a Karpathy-style autoresearch loop to rank 169 GWAS-orphan genes by drug repurposing potential, iterating on Spearman-rank correlation scores across 10 scoring experiments with keep/discard decisions.
 - [GigaWorld-Policy-0.5](https://arxiv.org/abs/2607.13960) - Robotics WAM research: the GigaAI team uses an agent-based AutoResearch pipeline to systematically search training configurations for their action-centered World Action Model, achieving 85ms inference on an RTX 4090 while reducing manual hyperparameter intervention through autonomous configuration discovery.
 - [ENPIRE: Agentic Robot Policy Self-Improvement](https://research.nvidia.com/labs/gear/enpire/) - Robotics research: deploys a multi-agent physical autoresearch harness (NVIDIA GEAR/CMU/UC Berkeley) where Codex, Claude Code, and Kimi Code agents autonomously propose robot policy improvements, test them on real hardware with auto-reset and auto-verification, and keep only changes that raise success rate, reaching 99% on dexterous tasks (GPU insertion, zip-tie cutting, pin insertion) while scaling to 8-robot fleets with explicit mean-robot-utilization and mean-token-utilization metrics.
+- [Can AI agents conduct open-ended AI research?](https://arxiv.org/abs/2607.27191) - Research evaluation: provides early evidence from two case studies on whether AI agents can conduct open-ended research beyond fixed-benchmark optimization, examining the gap between metric-driven hill-climbing and genuine scientific discovery.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
@@ -635,6 +636,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch At Listen Labs](https://listenlabs.ai/blog/autoresearch-at-listen) - Blog: Listen Labs applies autoresearch to AI-led user interviews, iterating on question design and interview flow against real respondent engagement metrics.
 - [Autoresearch Just Turned Your Agent Into Its Own System Administrator](https://clawblog.com/autoresearch-self-improving-agents-governance-shift) - Blog: ClawBlog argues that autoresearch represents a governance shift where agents transition from executing tasks to managing and improving their own runtime infrastructure — becoming their own sysadmins.
 - [Hiloop Launches Autoresearch Service](https://digg.com/tech/rjaq43ix) - News: Hiloop launches a commercial autoresearch service for AI improvement, marking one of the first productized offerings that packages the autoresearch loop as a paid service rather than an open-source pattern.
+- [Autoresearch Summit Takeaways](https://blog.agihouse.org/posts/autoresearch-summit-takeaways) - Blog: AGI House publishes takeaways from an autoresearch-focused summit, signaling that the community has reached sufficient critical mass to organize dedicated in-person events around the pattern.
 
 ## Submission format
 
