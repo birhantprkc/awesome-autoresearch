@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 141 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 156 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 159 entries
 
 ### Open categories still being seeded
 
@@ -639,6 +639,9 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch Just Turned Your Agent Into Its Own System Administrator](https://clawblog.com/autoresearch-self-improving-agents-governance-shift) - Blog: ClawBlog argues that autoresearch represents a governance shift where agents transition from executing tasks to managing and improving their own runtime infrastructure — becoming their own sysadmins.
 - [Hiloop Launches Autoresearch Service](https://digg.com/tech/rjaq43ix) - News: Hiloop launches a commercial autoresearch service for AI improvement, marking one of the first productized offerings that packages the autoresearch loop as a paid service rather than an open-source pattern.
 - [Autoresearch Summit Takeaways](https://blog.agihouse.org/posts/autoresearch-summit-takeaways) - Blog: AGI House publishes takeaways from an autoresearch-focused summit, signaling that the community has reached sufficient critical mass to organize dedicated in-person events around the pattern.
+- [Run Karpathy's autoresearch on Google serverless for $2/hour](https://medium.com/google-cloud/run-karpathys-autoresearch-on-a-google-serverless-stack-for-2-hour-210fc8e2a829) - Tutorial: demonstrates running the full autoresearch loop on Google Cloud's serverless stack at approximately $2/hour, making overnight autonomous experimentation accessible without owning a GPU.
+- [Chi (χ): An Autoresearch Harness for Coding Agents](https://kdpisda.in/chi-autoresearch-harness-llm-coding-agents/) - Blog: Kuldeep Pisda introduces Chi, an autoresearch harness designed specifically for coding agents, with structured experiment tracking and metric-driven keep/discard gates.
+- [Autoresearch vs Meta-Harness](https://aiquinta.ai/blog/autoresearch-vs-meta-harness/) - Blog: AI Quinta compares the two dominant self-optimizing paradigms — single-loop autoresearch vs meta-harness optimization — analyzing their relative strengths for different problem classes.
 
 ## Submission format
 
