@@ -1,5 +1,3 @@
 {
-  "packages": [
-    "git:github.com/tintinweb/pi-schedule-prompt"
-  ]
+  "packages": []
 }
