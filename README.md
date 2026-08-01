@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 80 entries
+- [Scientific Research](categories/scientific-research.md) — 82 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 33 entries
@@ -150,6 +150,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [diffusers-pipeline-autoresearch](https://github.com/deep-diver/diffusers-pipeline-autoresearch) - Image generation research: applies Karpathy-style autoresearch to Diffusers FLUX.2 pipeline configs on JarvisLabs GPUs, running 10 rounds of candidate sweeps and keeping only prompts, aspect ratios, and semantic anchors that improve a unified visual-judge score for a multi-floor architectural cutaway target.
 - [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 - [Writing-Driven Autoresearch](https://github.com/happyhappy-jun/writing-driven-autoresearch) - Scientific research: maintains a submittable paper from the first minute and runs a modify → measure → verify → revise loop in which every experiment must back a specific claim in the draft, rewriting or deleting claims the measurements falsify.
+- [Agon](https://github.com/AutoResearch-Factory/Agon) - Scientific research: extends Karpathy's autoresearch with Prompt Economy, organizing scientist/coder/auditor loops across more than ten domains through a modify→verify→keep/discard→repeat cycle, demonstrated in a 30-day unattended run.
+- [AutoResearch Survey](https://haizhaoyang.github.io/research/autoresearch-survey.html) - Autoresearch landscape: systematizes 56 autonomous research systems along seven axes, mapping the gap between what systems can produce and what they can defend before release.
 - [math-autoresearch](https://github.com/takumayellow/math-autoresearch) - Mathematical research: applies an AI-driven autoresearch pipeline to open graph theory conjectures (Graffiti.pc/TxGraffiti) with a search→finite certificate→independent verification→Japanese LaTeX paper workflow, requiring formal proof certification before any claim is accepted.
 - [pla-fea-autoresearch](https://github.com/DJLougen/pla-fea-autoresearch) - Materials engineering: applies an open simulation and physical-validation toolkit with CalculiX FEA to test PLA 3D-printing infill ideas through autoresearch-style iterative hypothesis testing.
 - [low-light-geolocalization-autoresearch](https://github.com/akaalias/low-light-geolocalization-autoresearch) - UAV vision research: applies a Claude-driven autoresearch loop to train per-area scene-coordinate models for low-light visual geolocalization, targeting sub-$5 ESP32-P4 hardware deployment.
