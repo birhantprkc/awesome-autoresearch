@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 141 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 159 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 161 entries
 
 ### Open categories still being seeded
 
@@ -642,6 +642,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Run Karpathy's autoresearch on Google serverless for $2/hour](https://medium.com/google-cloud/run-karpathys-autoresearch-on-a-google-serverless-stack-for-2-hour-210fc8e2a829) - Tutorial: demonstrates running the full autoresearch loop on Google Cloud's serverless stack at approximately $2/hour, making overnight autonomous experimentation accessible without owning a GPU.
 - [Chi (χ): An Autoresearch Harness for Coding Agents](https://kdpisda.in/chi-autoresearch-harness-llm-coding-agents/) - Blog: Kuldeep Pisda introduces Chi, an autoresearch harness designed specifically for coding agents, with structured experiment tracking and metric-driven keep/discard gates.
 - [Autoresearch vs Meta-Harness](https://aiquinta.ai/blog/autoresearch-vs-meta-harness/) - Blog: AI Quinta compares the two dominant self-optimizing paradigms — single-loop autoresearch vs meta-harness optimization — analyzing their relative strengths for different problem classes.
+- [product-darwin: autoresearch for product decisions](https://github.com/ulpan12/product-darwin) - Repo: applies Karpathy's autoresearch loop to product management — a 5-minute "should we build this?" decision framework that treats product hypotheses as experiments to be validated, kept, or discarded.
+- [Autoresearch Builder Recap](https://blog.agihouse.org/posts/autoresearch-builder-recap) - Blog: AGI House publishes a recap from an autoresearch builder event, highlighting practical patterns and lessons from practitioners building and deploying autoresearch systems.
 
 ## Submission format
 
