@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 141 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 142 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 161 entries
 
 ### Open categories still being seeded
@@ -445,6 +445,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoflash](https://github.com/recursive-org/autoflash) - LLM infrastructure autoresearch: Recursive's (Richard Socher) autoresearch tool for performance engineering on LLM infrastructure, applying the keep/discard loop to inference and training system optimization.
 - [autoresearch-ios](https://github.com/fomoPhil/autoresearch-ios) - iOS app optimization: a Claude Code skill that applies Karpathy-style auto-research loops to iOS apps via XcodeBuildMCP, measuring and iterating on Xcode build metrics.
 - [braided-autoresearch](https://github.com/poudelsubhan/braided-autoresearch) - Git DAG-based autoresearch: models autoresearch as a git DAG with bandit-scheduled lineages, agent-written semantic merges, and cross-lineage replication as a built-in reward-hacking detector.
+- [Agentic-Research-Control-Panel](https://github.com/JasonCodeMaker/Agentic-Research-Control-Panel) - Governed autoresearch control plane: a local control panel for running governed AutoResearch in real repositories with human-approved scope, live experiment tracking, evidence-backed results, and project memory for Claude Code and Codex.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
