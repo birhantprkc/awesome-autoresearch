@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 142 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 161 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 143 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 162 entries
 
 ### Open categories still being seeded
 
@@ -446,6 +446,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-ios](https://github.com/fomoPhil/autoresearch-ios) - iOS app optimization: a Claude Code skill that applies Karpathy-style auto-research loops to iOS apps via XcodeBuildMCP, measuring and iterating on Xcode build metrics.
 - [braided-autoresearch](https://github.com/poudelsubhan/braided-autoresearch) - Git DAG-based autoresearch: models autoresearch as a git DAG with bandit-scheduled lineages, agent-written semantic merges, and cross-lineage replication as a built-in reward-hacking detector.
 - [Agentic-Research-Control-Panel](https://github.com/JasonCodeMaker/Agentic-Research-Control-Panel) - Governed autoresearch control plane: a local control panel for running governed AutoResearch in real repositories with human-approved scope, live experiment tracking, evidence-backed results, and project memory for Claude Code and Codex.
+- [de-anthropocentric-research-engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) - Autonomous research skill framework: 900+ pure-markdown skills organized as 9 composable packages over a 4-layer hierarchy (Campaign→Strategy→Tactic→SOP) with non-linear orchestration and backtracking, treating the AI as the researcher and the human as direction-setter.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
@@ -645,6 +646,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch vs Meta-Harness](https://aiquinta.ai/blog/autoresearch-vs-meta-harness/) - Blog: AI Quinta compares the two dominant self-optimizing paradigms — single-loop autoresearch vs meta-harness optimization — analyzing their relative strengths for different problem classes.
 - [product-darwin: autoresearch for product decisions](https://github.com/ulpan12/product-darwin) - Repo: applies Karpathy's autoresearch loop to product management — a 5-minute "should we build this?" decision framework that treats product hypotheses as experiments to be validated, kept, or discarded.
 - [Autoresearch Builder Recap](https://blog.agihouse.org/posts/autoresearch-builder-recap) - Blog: AGI House publishes a recap from an autoresearch builder event, highlighting practical patterns and lessons from practitioners building and deploying autoresearch systems.
+- [Eigen and Lighter Launch Autoresearch Challenge](https://cryptopanic.com/news/33168053/Eigen-and-Lighter-Launch-Autoresearch-Challenge-to-Speed-up-Exchange) - News: Eigen and Lighter launch a competitive autoresearch challenge to speed up crypto exchange performance, marking the pattern's adoption as a competitive benchmarking format in DeFi.
 
 ## Submission format
 
