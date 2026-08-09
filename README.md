@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 82 entries
+- [Scientific Research](categories/scientific-research.md) — 83 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 33 entries
@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 144 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 145 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 162 entries
 
 ### Open categories still being seeded
@@ -140,6 +140,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [GigaWorld-Policy-0.5](https://arxiv.org/abs/2607.13960) - Robotics WAM research: the GigaAI team uses an agent-based AutoResearch pipeline to systematically search training configurations for their action-centered World Action Model, achieving 85ms inference on an RTX 4090 while reducing manual hyperparameter intervention through autonomous configuration discovery.
 - [ENPIRE: Agentic Robot Policy Self-Improvement](https://research.nvidia.com/labs/gear/enpire/) - Robotics research: deploys a multi-agent physical autoresearch harness (NVIDIA GEAR/CMU/UC Berkeley) where Codex, Claude Code, and Kimi Code agents autonomously propose robot policy improvements, test them on real hardware with auto-reset and auto-verification, and keep only changes that raise success rate, reaching 99% on dexterous tasks (GPU insertion, zip-tie cutting, pin insertion) while scaling to 8-robot fleets with explicit mean-robot-utilization and mean-token-utilization metrics.
 - [Can AI agents conduct open-ended AI research?](https://arxiv.org/abs/2607.27191) - Research evaluation: provides early evidence from two case studies on whether AI agents can conduct open-ended research beyond fixed-benchmark optimization, examining the gap between metric-driven hill-climbing and genuine scientific discovery.
+- [Recovering Wasted Compute in Autoresearch Agents](https://github.com/tingtang2/autoresearch-compute-recovery) - Autoresearch efficiency: COLM 2026 paper proposing methods to recover compute wasted during failed or discarded autoresearch experiments, turning previously lost GPU-hours into reusable training progress.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
@@ -448,6 +449,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Agentic-Research-Control-Panel](https://github.com/JasonCodeMaker/Agentic-Research-Control-Panel) - Governed autoresearch control plane: a local control panel for running governed AutoResearch in real repositories with human-approved scope, live experiment tracking, evidence-backed results, and project memory for Claude Code and Codex.
 - [de-anthropocentric-research-engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) - Autonomous research skill framework: 900+ pure-markdown skills organized as 9 composable packages over a 4-layer hierarchy (Campaign→Strategy→Tactic→SOP) with non-linear orchestration and backtracking, treating the AI as the researcher and the human as direction-setter.
 - [durable-autoresearch](https://github.com/professorpalmer/durable-autoresearch) - Durable research memory: a white paper proposing waste-verify loops and negative-result memory as complementary mechanisms to soft hubs, enabling durable research memory on consumer GPUs (≤24GB) across long autoresearch runs.
+- [Sea-mult-agent](https://github.com/yu-xin-c/Sea-mult-agent) - Multi-agent AutoResearch in Chinese: integrates multi-agent coordination, trusted sandboxed execution, and multi-way ablation experiments, enabling one-sentence launching of isolated AutoResearch ablation studies.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
