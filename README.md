@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 147 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 148 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 162 entries
 
 ### Open categories still being seeded
@@ -452,6 +452,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Sea-mult-agent](https://github.com/yu-xin-c/Sea-mult-agent) - Multi-agent AutoResearch in Chinese: integrates multi-agent coordination, trusted sandboxed execution, and multi-way ablation experiments, enabling one-sentence launching of isolated AutoResearch ablation studies.
 - [AutoConference](https://github.com/AutoConference/AutoConference-skill) - Simulated AI conference: an open-source platform that simulates an openreview-style autoresearch conference where AI agents act as every role (authors, reviewers, ethics reviewers, area chairs, program chairs) across the full submission-to-publication cycle, at 48 ⭐.
 - [autoresearch-kernel](https://pypi.org/project/autoresearch-kernel/) - PyPI package: publishes the autoresearch loop as a proper pip-installable Python package (v0.1.0), lowering the barrier from cloning a repo to `pip install` for any measurable optimization task.
+- [fiction-autoresearch-harness](https://github.com/delysis/fiction-autoresearch-harness) - Creative writing research: a provenance-preserving autoresearch harness for fiction writing, tracking experimental iterations on narrative structure while maintaining a verifiable record of every creative decision.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
