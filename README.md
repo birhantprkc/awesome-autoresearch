@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 149 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 163 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 150 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 164 entries
 
 ### Open categories still being seeded
 
@@ -454,6 +454,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-kernel](https://pypi.org/project/autoresearch-kernel/) - PyPI package: publishes the autoresearch loop as a proper pip-installable Python package (v0.1.0), lowering the barrier from cloning a repo to `pip install` for any measurable optimization task.
 - [fiction-autoresearch-harness](https://github.com/delysis/fiction-autoresearch-harness) - Creative writing research: a provenance-preserving autoresearch harness for fiction writing, tracking experimental iterations on narrative structure while maintaining a verifiable record of every creative decision.
 - [autoresearch-governance](https://github.com/from1to9/autoresearch-governance) - Evidence-first governance protocol: a compact governance layer for multi-agent automated research that prioritizes evidence trails and claim verification over raw output volume, defining how autonomous research claims can be audited and accepted.
+- [standups-with-autoresearch](https://github.com/RohanAwhad/standups-with-autoresearch) - Human-as-PI interaction: defines communication patterns for a human to act as principal investigator over an autoresearch agent, structuring standup-style check-ins and research direction steering without breaking the autonomous loop.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
@@ -654,6 +655,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [product-darwin: autoresearch for product decisions](https://github.com/ulpan12/product-darwin) - Repo: applies Karpathy's autoresearch loop to product management — a 5-minute "should we build this?" decision framework that treats product hypotheses as experiments to be validated, kept, or discarded.
 - [Autoresearch Builder Recap](https://blog.agihouse.org/posts/autoresearch-builder-recap) - Blog: AGI House publishes a recap from an autoresearch builder event, highlighting practical patterns and lessons from practitioners building and deploying autoresearch systems.
 - [Study contradicts autonomous-research optimism](https://the-decoder.com/study-contradicts-anthropic-and-openai-claims-that-autonomous-ai-research-is-within-reach/) - News: a study pushes back on Anthropic and OpenAI claims that autonomous AI research is imminent, providing a counterweight to the optimism by measuring where agents still fall short on open-ended discovery.
+- [An Attempt To Understand Automated AI Research](https://www.primeintellect.ai/blog/comparing-frontier-models-nanogpt-speedrun) - Blog: Prime Intellect compares frontier models on the nanoGPT speedrun benchmark, attempting to characterize how different LLMs perform as autoresearch agents on a standardized optimization task.
 - [Eigen and Lighter Launch Autoresearch Challenge](https://cryptopanic.com/news/33168053/Eigen-and-Lighter-Launch-Autoresearch-Challenge-to-Speed-up-Exchange) - News: Eigen and Lighter launch a competitive autoresearch challenge to speed up crypto exchange performance, marking the pattern's adoption as a competitive benchmarking format in DeFi.
 
 ## Submission format
