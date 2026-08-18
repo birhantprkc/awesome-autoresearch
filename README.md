@@ -39,7 +39,7 @@ We do **not** include:
 - [Scientific Research](categories/scientific-research.md) — 83 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
-- [Finance / Trading](categories/finance-trading.md) — 33 entries
+- [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
@@ -277,6 +277,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [IPL Odds Multi-Agent Autoresearch](https://github.com/dashthird-0/ipl-odds-multiagent-autoresearch) - Sports betting research: deploys 7 Claude Code subagents to forecast IPL match outcomes, grades each forecast by Brier score, and autonomously mutates reasoning rules across a full season without human intervention.
 - [Clio](https://github.com/zhongdaweiai/clio) - Prediction-market forecasting: implements autoresearch as a multi-agent, Pareto-scored, time-evolving backtest harness for prediction markets with adversarial validation and bankroll-as-ground-truth.
 - [numerai-mcp-autoresearch](https://github.com/rnop/numerai-mcp-autoresearch) - Quantitative finance: applies an agentic autoresearch harness to the Numerai classic tournament with XGBoost, Bayesian optimization, time-series cross-validation, and a custom MCP server for autonomous weekly retraining and submission.
+- [Credit-autoresearch](https://github.com/tyutluna/Credit-autoresearch) - Credit risk modeling: pairs an OpenAI coding agent that iteratively generates raw-credit-variable transformations with a deterministic Statsmodels GLM pipeline that evaluates each candidate by validation Gini, applying keep/discard to feature engineering.
 - [trading-autoresearch](https://github.com/vzeman/trading-autoresearch) - Intraday trading research: applies Karpathy-style autoresearch to a PatchTST transformer and Kelly-sized policy, iterating overnight and gating changes by Sharpe lower-CI and drawdown floor with detailed per-iteration reports.
 - [quanti-autoresearch](https://github.com/GHCharlesLau/quanti-autoresearch) - Economic research: applies Karpathy-style autoresearch to econometric specification search for GDP per capita growth prediction, iterating on feature selection, estimators, and functional forms against held-out RMSE with structured 4-phase exploration.
 - [AutoResearch-based-Trading-Strategy-Generation-and-Testing](https://github.com/nhocconan/AutoResearch-based-Trading-Strategy-Generation-and-Testing) - Crypto trading research: applies Karpathy-style autoresearch to crypto futures strategy discovery with honest simulation guarantees, an LLM agent writing strategies from a knowledge base of quant techniques, and autonomous keep/discard decisions.
