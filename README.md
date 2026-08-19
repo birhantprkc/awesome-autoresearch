@@ -38,7 +38,7 @@ We do **not** include:
 
 - [Scientific Research](categories/scientific-research.md) — 83 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
@@ -244,6 +244,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AHA: Agent Hacks Agent](https://github.com/henrymao2004/Auto-research-red-teaming) - Production-agent red-teaming: applies an autoresearch loop to red-team trajectories, surfacing reusable failure mechanisms and building a frozen Vulnerability Concept Graph so agents discover their own attack surfaces before adversaries do, with published paper, casebook, and interactive website.
 - [Autoresearch Novelty Bench](https://github.com/evo-hq/autoresearch-novelty-bench) - Novelty benchmark: evaluates autonomous research agents on whether their proposed hypotheses are novel, anticipate future breakthroughs, or merely rediscover known techniques, built on Prime Intellect's speedrunning archive.
 - [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Scientific research evaluation: benchmarks 40 real-science tasks across 10 disciplines, scoring AI agents on whether they can re-discover or surpass published research findings through autonomous pipelines.
+- [How Do Agents Fail on AutoResearch](https://arxiv.org/html/2608.14905) - Autoresearch evaluation: an end-to-end diagnostic evaluation across 100 real-world frontier research tasks that systematically characterizes where and how agents fail, providing a failure taxonomy beyond aggregate success metrics.
 
 ### Finance / Trading
 
