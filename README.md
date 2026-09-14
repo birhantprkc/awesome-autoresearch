@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 154 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 155 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 171 entries
 
 ### Open categories still being seeded
@@ -453,6 +453,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
 - [easy-autoresearch](https://github.com/dschaub95/easy-autoresearch) - Autoresearch infra: scaffolds an autonomous repository-optimization loop for Codex with SQLite state, agent phases, and a live observability dashboard.
 - [AutoExp](https://github.com/wizwand/autoexp) - Experiment scaffolding tool: turns any AI/ML training project into a Karpathy-style autoresearch workflow with a one-line setup that auto-infers training commands and evaluation metrics, then runs keep/discard experiments.
+- [STEER](https://github.com/xieyulai/steer) - Experiment framework: connects existing training projects into a governed autoresearch loop for Cursor/Claude Code, freezing the task and scorer while agents modify implementations and humans audit keep/discard decisions.
 - [autoresearch-sboss](https://github.com/Armosphera/autoresearch-sboss) - Sovereign business workflow adaptation: ports Karpathy's keep/revert loop from GPU training to sovereign business workflow optimization, running stdlib+httpx on any Mac with no torch or GPU dependencies.
 - [autoresearch-competitions](https://github.com/tangle-network/autoresearch-competitions) - Decentralized improvement market: a Tangle Blueprint that posts bounties for better agents, models, or algorithms, scored on a held-out test, creating an open market for verifiable improvement through autoresearch-style keep/discard evaluation.
 - [autoresearch-chain](https://github.com/Thrasher66099/autoresearch-chain) - Decentralized Proof-of-Useful-Work protocol: a fork-native protocol that mines validated improvements to AI training recipes, turning autoresearch experiment results into a decentralized consensus mechanism where kept improvements prove useful computation.
