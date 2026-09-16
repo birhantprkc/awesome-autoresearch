@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 95 entries
+- [Scientific Research](categories/scientific-research.md) — 96 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 55 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
@@ -153,6 +153,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Autoresearch for Marketplace Catalogs](https://arxiv.org/abs/2609.00274) - E-commerce research: applies autoresearch to marketplace catalog transformation, migrating legacy form-based product data into AI-native matching representations through iterative keep/discard experiments on embedding and matching quality.
 - [Auto-RecSys](https://arxiv.org/pdf/2609.10922v1) - Recommender systems: harnesses autonomous research agents for industry-scale recommender system development, applying autoresearch loops to model, feature, and ranking-pipeline optimization at production scale.
 - [Autonomous Research for Open-Ended Problems](https://arxiv.org/abs/2609.13073) - Telecom case study: applies autonomous research to open-ended telecom ticket retrieval, iterating on retrieval and ranking approaches against real enterprise ticket-resolution metrics.
+- [(auto)²-research: SoTA on Karpathy's NanoChat Benchmark](https://rekursiv.ai/blog/autoautoresearch/) - Benchmark result: rekursiv.ai applies auto-autoresearch (an outer autoresearch loop optimizing the inner loop itself) to Karpathy's NanoChat benchmark, reporting state-of-the-art results through recursive meta-optimization.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
