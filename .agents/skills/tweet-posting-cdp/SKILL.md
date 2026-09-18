@@ -1,21 +1,60 @@
 ---
 name: tweet-posting-cdp
-description: Publish tweets via Chrome DevTools Protocol (CDP) without any browser extension. Use for posting X/Twitter updates from scripts or agents when opencli-style extension tooling is unavailable or broken.
+description: Publish tweets via Chrome DevTools Protocol (CDP) without any browser extension, using a fixed post layout. Use for posting X/Twitter updates from scripts or agents, especially the periodic awesome-list sweep posts.
 ---
 
 # Tweet Posting via CDP
 
-Post tweets to X/Twitter by driving the already-logged-in Chrome through the DevTools Protocol. No extension needed — relies on Chrome's remote debugging endpoint.
+Post tweets by driving the already-logged-in Chrome through the DevTools Protocol. No extension needed.
 
-## Prerequisites
+**Canonical copy:** `awesome-autoresearch/.agents/skills/tweet-posting-cdp/SKILL.md`
+`~/.agents/skills/tweet-posting-cdp` symlinks here so awesome-jev and other repos resolve the same content. Edit one place only.
 
-1. Chrome running with remote debugging. If `~/Library/Application Support/Google/Chrome/DevToolsActivePort` exists, the endpoint is live (the file contains port + browser WebSocket path). If missing, relaunch Chrome:
+## 统一格式（必须遵守）
 
-```bash
-open -a "Google Chrome" --args --remote-debugging-port=9222
+所有巡查/更新帖用同一版式，**空行必须是真的空行**（脚本按段落写入，见下）。
+
+### A. 周期巡检帖
+
+```
+📋 {repo} 周期巡检
+
+本轮新增 {n} 条：
+
+1. {名称}（{分类}）：{一句话：是什么 + 为什么值得加}
+
+2. {名称}（{分类}）：{一句话}
+
+📂 github.com/yibie/{repo}
+📊 {total} entries
 ```
 
-2. Chrome logged into X (https://x.com) — the script reuses the logged-in session.
+规则：
+- 首行标题写一行，空行，`本轮新增 N 条：`，空行，然后逐条。
+- 每条**一行**、**一句话**；`序号. 名称（分类）：说明`。条目之间空一行。
+- 结尾固定两行：仓库链接、总条目数（用 `📂` / `📊`）。
+- 本轮有升格或去重时，在条目后另起一段说明（同样与上文空行分隔）。
+- **无新增不发帖**（项目约定）。纯维护（去重、升格、修脚本）不算新增。
+- 一轮只发一次；禁止换措辞重发、禁止中英各发一次。
+
+### B. 上线/公告帖
+
+```
+📢 {repo} 上线
+
+{一句话背景}
+
+· {亮点 1}
+· {亮点 2}
+
+📂 github.com/yibie/{repo}
+📊 {total} entries
+```
+
+### 发布前自检
+
+- 段数 = 行数 + 1（脚本会打印 `内容校验通过：N 字符 / M 段落`，M 必须等于期望段落数）。
+- 命令用 `DRY_RUN=1` 先跑一遍，确认读回渲染与预期完全一致再真发。
 
 ## Post a tweet
 
@@ -23,30 +62,91 @@ open -a "Google Chrome" --args --remote-debugging-port=9222
 echo "推文内容" | ~/.agent-reach/scripts/post-tweet-cdp.mjs
 # 或
 ~/.agent-reach/scripts/post-tweet-cdp.mjs "推文内容"
+
+# 只写入并校验、不发帖、结束前清空（推荐先跑）
+DRY_RUN=1 ~/.agent-reach/scripts/post-tweet-cdp.mjs "推文内容"
+
+# 排查写入过程：每次读回值都打出来
+STEP_TRACE=1 DRY_RUN=1 ~/.agent-reach/scripts/post-tweet-cdp.mjs "..."
 ```
 
-Script output: composer text length, button state, success confirmation. On success the composer is emptied (that's the verification signal).
+脚本成功时会打印 `✅ 内容校验通过：N 字符 / M 段落`，发布后再确认 `✅ 发布成功（composer 已清空）`。任一步校验失败即中止，**不会**发布未校验内容。失败时会自动清空 composer 残稿。
+
+## Prerequisites
+
+Chrome running with remote debugging **and** logged into X. The script finds the port itself:
+
+1. `CDP_PORT` env override (if set).
+2. Probe `9333`, `9222`, `9223` via `http://127.0.0.1:<port>/json/version`.
+3. Fall back to `~/Library/Application Support/Google/Chrome/DevToolsActivePort`.
+
+The live instance on this Mac is usually `/tmp/chrome-pub-profile` on **9333** (started with `--user-data-dir=/tmp/chrome-pub-profile --remote-debugging-port=9333`). The main-profile `DevToolsActivePort` file can be **stale** (pointing at a dead 9222) — that is why probing comes first.
+
+Chrome v152: `/json/version` **does** work and returns `webSocketDebuggerUrl`; use it instead of constructing the URL from the file.
 
 ## How it works
 
-1. Read `DevToolsActivePort` → `ws://127.0.0.1:<port>/devtools/browser/<token>`
-   - NOTE: HTTP `http://localhost:9222/json/*` returns 404/502 on modern Chrome (v136+); the WebSocket from this file is the only working entry point.
-2. `Target.getTargets` → find the `page` target whose URL contains `x.com` (open one if absent).
+1. Probe for the browser WebSocket URL (see above).
+2. `Target.getTargets` → take the page whose `pathname === '/home'`. **Only `/home` is acceptable** — a status page also has `[data-testid="tweetTextarea_0"]`, but that is the **reply** box. If no `/home` tab exists, create one.
 3. `Target.attachToTarget` with `flatten: true` → session-scoped commands.
-4. Focus the composer via `Runtime.evaluate`: `document.querySelector('[data-testid="tweetTextarea_0"]').focus()`, then clear any draft with `execCommand('selectAll')` + `execCommand('delete')`.
-5. Insert text in ~50-char chunks via `Input.insertText` (trusted input events — React/Draft.js accepts these; a single big insertText or plain `execCommand('insertText')` does NOT enable the Post button).
-6. Click `[data-testid="tweetButtonInline"]` (fallback `[data-testid="tweetButton"]`) via `Runtime.evaluate` → `.click()`.
-7. Verify: composer textContent length drops to 0/gone.
+4. Clear the composer with CDP editing commands `['selectAll']` then `['delete']`.
+5. Write the text line by line (Enter between lines), verifying after each step.
+6. Verify the full readback equals the target; compare paragraph counts too.
+7. Assert the post button reads `发帖`/`Post` (a `回复`/`Reply` button means we are on the wrong page → abort).
+8. Click `[data-testid="tweetButtonInline"]` (fallback `[data-testid="tweetButton"]`).
+9. Verify success: composer is empty.
 
-## Gotchas (learned the hard way)
+## Gotchas (all verified empirically — do not "simplify" these away)
 
-- `execCommand('insertText')` alone leaves the Post button `disabled` — React never registers the text. `Input.insertText` (CDP) is required.
-- `Input.insertText` with the whole tweet in one call silently drops trailing chars. Chunk at ~50 chars with ~150ms sleep between chunks.
-- The composer element itself is the contenteditable (`DIV.tweetTextarea_0`); `.focus()` on it works, then `Input.insertText` lands correctly.
-- OpenCLI's browser-bridge approach (`opencli twitter post`) breaks with `attach failed: Cannot access a chrome-extension:// URL of different extension` when the extension ID drifts after updates — CDP avoids extensions entirely.
-- cua-driver (`cua.ai/cua-driver`) native path (AX click + CGEvent typing) works for navigation but web-content writes are `unverifiable`; its `page` tool needs the same CDP port. Direct CDP is the most reliable layer.
+### 1. Newlines need an Enter key event
 
-## Posting rules (project convention)
+`Input.insertText` with `"\n"` does **not** create a paragraph in X's Draft.js composer. Measured results for inserting `AAA`, then a line break, then `BBB`:
 
-- One post per sweep round; never retry or repost with different wording (opencli-era rule, still honored).
-- No post when a sweep round adds zero entries.
+| Method | Blocks | Content |
+| --- | --- | --- |
+| `Input.insertText("\n")` | 1 | `AAA BBB` — no break at all |
+| `keyDown`+`char`+`keyUp`, `text: "\r"` | 2 | `["AAA", "\nBBB"]` — literal `\n` leaks into the text |
+| `execCommand('insertParagraph')` | 1 | mangled |
+| **`rawKeyDown`+`keyUp`, no `text`** | **2** | **`["AAA","BBB"]` ✅** |
+
+So: Enter = `{type:'rawKeyDown', key:'Enter', code:'Enter', windowsVirtualKeyCode:13, nativeVirtualKeyCode:13}` then a matching `keyUp`. Never pass `text`.
+
+### 2. Read the composer via per-block `textContent`
+
+| State | `innerText` per block | `textContent` per block |
+| --- | --- | --- |
+| empty composer | `["\n\n\n"]` — reads as 3 newlines ❌ | `[""]` ✅ |
+| `AAA` + Enter + `BBB` | `["AAA\n\n","BBB"]` ❌ | `["AAA","BBB"]` ✅ |
+| trailing empty paragraph | `["AAA\n\n","BBB","\n"]` ❌ | `["AAA","BBB",""]` ✅ |
+
+`innerText` appends `\n`/`\n\n` per block (unusable for exact comparison); `editor.textContent` concatenates all blocks and loses newlines. Join per-block `textContent` with `\n`.
+
+### 3. Clear with CDP editing commands, not raw modifier keys
+
+`document.execCommand('selectAll'/'delete')` bypasses Draft.js's internal state; the next `insertText` then gets reverted. A bare `rawKeyDown` with `modifiers: 4` (Cmd+A) also does not reliably select. Use `commands: ['selectAll']` and `commands: ['delete']` on `Input.dispatchKeyEvent`, then re-read to confirm the composer is empty.
+
+**Historical bug worth remembering:** the combination of an uncleared draft plus chunked inserts silently dropped the **first ~50 characters** of every post (and collapsed newlines), so published tweets began mid-sentence. Full-content verification exists to catch exactly this.
+
+### 4. Cursor must advance on the newline-preserving readback
+
+If you strip trailing newlines before comparing, a step that only adds a blank line looks like no progress → the loop declares a stall. Keep newlines in the readback and use it for both the prefix check and the cursor; only strip trailing newlines for the final equality check.
+
+### 5. Never post from a non-`/home` tab
+
+`tweetTextarea_0` exists on status pages as the reply composer. Replying to a stranger's tweet is the worst possible failure. The script hard-blocks on `pathname !== '/home'` and on a button label that isn't `发帖`/`Post`.
+
+### 6. Chunk size
+
+Insert line-by-line in ~24-char chunks with ~130 ms between chunks. Earlier notes recommended ~50-char chunks for `Input.insertText`; that is still fine for enabling the Post button, but smaller chunks plus after-each-step verification is what actually makes the write reliable.
+
+## Failure handling
+
+- Script aborts before clicking Post on any verification mismatch, and clears the composer on the way out.
+- If the composer cannot be cleared in 5 attempts, it aborts rather than writing on top of a dirty editor.
+- Do **not** retry with different wording after a failure that did post. If nothing was posted, a retry is fine.
+
+## Not used anymore
+
+- OpenCLI's browser bridge (`opencli twitter post`) — breaks with `attach failed: Cannot access a chrome-extension:// URL of different extension` when the extension ID drifts.
+- `execCommand('insertText')` for the composer body — React never registers it, Post stays disabled.
+- `ensure-chrome.sh` / `post-tweet.sh` — opencli-era helpers, superseded.
