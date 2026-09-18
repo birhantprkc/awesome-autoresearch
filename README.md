@@ -8,6 +8,11 @@ This README is the homepage aggregate of the current category files, so the late
 
 The repository treats all categories equally — each entry lives in exactly one category, chosen by its direct autoresearch application domain. A dedicated **Related Practices / Discussions** category captures credible public practice signals — X threads, Reddit discussions, and interviews — that describe real autoresearch usage even when no strong standalone case page exists yet.
 
+> [!WARNING]
+> **A listing is not an endorsement.** This project applies *inclusion* rules only — public, citable, and genuinely built around a modify → verify → keep/discard loop. It does **not** review code quality, maturity, security, or whether an entry runs at all, and star counts are neither filtered nor treated as a quality signal.
+>
+> **Treat bulk and same-day submissions with particular care.** Many entries here are one-off experiments, and several repositories released together by one author commonly share a single scaffold and a thin commit history. They can satisfy every inclusion rule and still be unproven. Volume is not evidence of quality. See [Curation is not endorsement](#curation-is-not-endorsement) for a checklist to run before adopting anything here.
+
 ## Why this list
 
 Most discussions about autoresearch are still scattered, vague, or overly tool-centric. This list is designed to answer two practical questions quickly:
@@ -33,6 +38,26 @@ We do **not** include:
 - Generic AI commentary with no autoresearch workflow.
 - Long write-ups inside the list itself.
 - Sources that are private, inaccessible, or too vague to classify.
+
+## Curation is not endorsement
+
+Inclusion means one thing: the entry satisfies the inclusion rules above. It is not a quality review, a security audit, or a recommendation. We do not verify that a project compiles, that its loop produces the result it claims, that its published numbers reproduce, or that its license permits your use.
+
+Two properties of this list make that caveat matter more than usual. First, **entries are not filtered by popularity** — a single-digit-star repository is judged on its rules, not its star count — so a listing can mean very little about maturity. Second, a lot of it was collected by automated sweeps, which means a repository can be linked within hours of being pushed, before anyone else has run it.
+
+This matters most for projects that arrive in bulk. When one author releases several repositories on the same day, they commonly share one scaffold — the same `AGENTS.md`, `CLAUDE.md`, `STATE.md`, and `CHANGELOG.md` — land in one or two commits each, and may ship considerably more prose than code. Such projects can be entirely legitimate; they are simply **unproven**. Treat them as leads, not as validated tools.
+
+Before adopting an entry, check it yourself:
+
+| Check | Why it matters |
+| --- | --- |
+| Does the loop actually run? | An entry can read well on a README alone. Look for the modify → measure → keep-or-discard step in the code, not just in the description. |
+| Is there a runnable check or experiment log? | Committed results, a benchmark harness, a `results.tsv`, or a public demo. No evidence means no evidence. |
+| Do the numbers have a source? | Speedups, accuracy gains, and cost savings should be traceable to the linked page. We strip claims we cannot verify, but the project page may still carry them. |
+| What will it cost you to try? | Some entries assume a paid API key, a rented GPU, or a specific hardware setup. Others run on a laptop. The entry usually does not say; the README usually does. |
+| Is there a license? | A number of entries have none, which limits reuse and redistribution. |
+
+Found something wrong? Open an issue or a pull request — **removal is as valid a contribution as addition.** Rules for AI-assisted work, project depth, and submission rate live in [CONTRIBUTING.md](CONTRIBUTING.md#ai-assisted-work-and-bulk-submissions).
 
 ## Current coverage
 

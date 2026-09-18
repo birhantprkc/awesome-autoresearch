@@ -205,6 +205,24 @@ opencli gh api repos/<owner>/<repo>/readme
 If evidence is good but not strong enough for a main case, keep it in discussions.
 Precision beats coverage.
 
+Before adding a repository, check depth (see CONTRIBUTING.md, "AI-assisted work, and bulk submissions"):
+
+- Does the code implement the loop, or is the claim README-only?
+- Is there a runnable check or committed result (benchmark harness, results file, demo)?
+- Is the repository mostly prompt documents? Then describe it as such, or skip it.
+- Does a batch of same-day repositories share one scaffold? That is a risk signal, not momentum — review each on its own merits, and cap a single author at three entries per rolling seven days.
+- Are the numbers in the entry traceable to the linked page? Strip what you cannot verify.
+- Is it a launch, funding, or press announcement? That is discussion material at best, never an implementation entry.
+
+## Handling pull requests
+
+When a contributor opens a PR:
+
+1. Verify the repository, do not just read the PR body — file tree, source, tests, commit history, and whether the code really calls what it claims.
+2. If the repository is thinner than the entry implies (README-only claims, no runnable check, docs outweighing code), say so in a review comment and ask for the missing evidence rather than merging or silently rejecting.
+3. When an author has already had three entries accepted in a rolling seven-day window, state the rule in the PR comment before acting on it, and queue the extra entries to a later cycle instead of rejecting them. Quote the CONTRIBUTING section so the contributor knows it is policy, not a judgement about them.
+4. Never edit a contributor's wording purely for style; do fix inaccurate claims.
+
 ## Deliverable checklist
 
 Before finishing, verify:

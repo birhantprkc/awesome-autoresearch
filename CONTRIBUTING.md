@@ -39,6 +39,11 @@ Please do not submit:
 - Marketing fluff with no concrete example
 - Private, dead, or inaccessible sources
 - Multi-paragraph explanations inside category files
+- Repositories that only *describe* an autoresearch loop without implementing one
+- Repositories whose documentation outweighs their code while claiming to be tools
+- Launch, funding, or press announcements presented as implementations
+
+For AI-assisted work, project depth, and submission-rate rules, see [AI-assisted work, and bulk submissions](#ai-assisted-work-and-bulk-submissions).
 
 ## Core rules
 
@@ -63,6 +68,42 @@ If a reader cannot understand the use case in one quick pass, rewrite it.
 ### 5. Prefer fewer, stronger entries
 
 High-signal curation is more important than volume.
+
+### 6. Depth over surface area
+
+An entry has to describe something that **runs**, not something that is described. Before submitting, make sure:
+
+- the repository implements the loop it claims — a modify → measure → keep-or-discard step in the code, not only in the prose;
+- there is at least one runnable check or committed result that would change if the logic broke — a benchmark harness, a results file, a test, or a public demo;
+- any number in your entry (speedup, accuracy, cost, time saved) is traceable to the linked page.
+
+If a project is mostly prompt documents, skills, or templates, that is fine — but submit and describe it as such. Do not present a prompt pack as a runner.
+
+## AI-assisted work, and bulk submissions
+
+AI-assisted development is welcome here. Plenty of listed projects were built with coding agents, and that is not a reason to exclude them. It does change what the reviewer needs from you.
+
+### Disclose AI generation
+
+If a project was generated or substantially written by an AI system, say so in the pull request, and preferably in the repository. Disclosure is not a penalty — it sets the review bar honestly, and it tells maintainers to check depth rather than authorship.
+
+Undisclosed generation usually becomes obvious anyway: a shared scaffold, a single bulk commit, documents far outweighing code. Being caught that way costs more trust than the disclosure would have.
+
+### Do not ship a scaffold as evidence
+
+One `AGENTS.md` / `CLAUDE.md` / `STATE.md` / `CHANGELOG.md` template reused across several repositories does not make any of them more complete. Neither does a README that documents features the code does not implement, or a results table with no artifact behind it.
+
+### Submission rate
+
+Bulk submission is the most common way this list loses signal — and this list is collected by automated sweeps, so it is exposed to it more than most.
+
+- **One entry per pull request.** Do not bundle unrelated projects.
+- **At most three entries per author per rolling seven days.** This is a review-priority rule, not a ban: entries beyond it are queued to a later cycle, not rejected on sight.
+- **Projects released together are reviewed individually.** Being in the same batch grants no shared credibility, and a weak member can hold up a strong one.
+- **A shared release date is treated as a risk signal**, not as momentum.
+- **Announcing a project is not evidence it exists.** A launch thread, a press release, or a funding announcement is not an implementation; it belongs in `related-practices-discussions.md`, if anywhere.
+
+Maintainers may accept a project with a caveat when the code is real but depth is unproven, and may decline one member of a batch while accepting its siblings.
 
 ## Entry format
 
@@ -146,3 +187,8 @@ Before submitting, confirm:
 - [ ] The entry explains scenario + method + value.
 - [ ] The category reflects the direct autoresearch use case.
 - [ ] The wording is concise and easy to scan.
+- [ ] The repository actually implements the loop (not a README-only claim).
+- [ ] There is at least one runnable check or committed result, or the entry says plainly that there is not.
+- [ ] Any number in the entry traces back to the linked page.
+- [ ] AI generation is disclosed, if it applies.
+- [ ] This is not more than my third entry in a rolling seven-day window.
