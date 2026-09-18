@@ -36,16 +36,16 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 98 entries
+- [Scientific Research](categories/scientific-research.md) — 99 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 55 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
-- [Finance / Trading](categories/finance-trading.md) — 34 entries
+- [Finance / Trading](categories/finance-trading.md) — 35 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 155 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 171 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 156 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 170 entries
 
 ### Open categories still being seeded
 
@@ -173,6 +173,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [low-light-geolocalization-autoresearch](https://github.com/akaalias/low-light-geolocalization-autoresearch) - UAV vision research: applies a Claude-driven autoresearch loop to train per-area scene-coordinate models for low-light visual geolocalization, targeting sub-$5 ESP32-P4 hardware deployment.
 - [autoMartiniAgent](https://github.com/ljding94/autoMartiniAgent) - Molecular dynamics research: combines an agent skill, MCP server, and autoresearch protocol to automate AA → Martini 3 coarse-grained mapping, applying keep/discard iteration to force-field parameter selection.
 - [qwen3-vl-autoresearch](https://github.com/mikhutchinson/qwen3-vl-autoresearch) - Vision-language research: applies leakage-controlled Qwen3-VL LoRA autoresearch on Apple Silicon, with an honest inconclusive confirmation study that explicitly reports when the loop found no reliable improvement despite rigorous experimental design.
+- [NanoTLM](https://github.com/Luisgarcav/nanotlm) - Reproducible model research: builds a laboratory for thermodynamic language models whose autoresearch controller lets an AI propose architectures but never modify the judge, publishing a frozen-benchmark result where the nanochat baseline still wins at 3.1905 bits per character.
 
 ### Software / Systems Optimization
 
@@ -304,6 +305,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [AutoResearch-based-Trading-Strategy-Generation-and-Testing](https://github.com/nhocconan/AutoResearch-based-Trading-Strategy-Generation-and-Testing) - Crypto trading research: applies Karpathy-style autoresearch to crypto futures strategy discovery with honest simulation guarantees, an LLM agent writing strategies from a knowledge base of quant techniques, and autonomous keep/discard decisions.
 - [Auto-Quant](https://github.com/TraderAlice/Auto-Quant) - Crypto trading research: applies Karpathy's autoresearch pattern to FreqTrade strategies on a 5-pair crypto universe, running backtest-driven keep/discard loops that evolved multi-strategy lineups across five versioned runs.
 - [noahroboros](https://github.com/upupnoah/noahroboros) - Crypto trading research: applies Karpathy-style autoresearch in Rust to BTC/ETH/SOL strategy optimization over 88 backtest experiments, discovering a simplified RSI(32) momentum strategy with a 2.569 composite score.
+- [trading-autoresearch](https://github.com/ilasek/trading-autoresearch) - Investment strategy research: runs hypothesize → write a candidate strategy → backtest under a fixed protocol → keep-or-discard → journal the learning continuously and unattended, while never executing trades.
 
 ### Personal Knowledge / Humanities
 
@@ -318,6 +320,7 @@ Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowled
 
 - [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
 - [AutoRAG Research Lab](https://github.com/fran-gen/autoresearch-rag) - RAG pipeline optimization: runs autonomous agents that plan, implement, benchmark, and keep/discard retrieval pipeline changes using Karpathy-mode over EnterpriseRAG-Bench with Docker-sandboxed evaluation and semantic no-op detection.
+- [MLSearch](https://github.com/davisbuilds/mlsearch) - Semantic paper retrieval: treats arXiv cs.LG search as a benchmarked ML system with a fixed corpus, reviewed evaluation splits, local embedding and reranking, and a results ledger for mechanical comparison between iterations.
 
 ### Workflow Automation
 
@@ -487,6 +490,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
 - [claude-autoresearch-skill](https://github.com/AlexWortega/claude-autoresearch-skill) - Claude Code skill: wraps karpathy/autoresearch with AutoScientists-inspired generational loops where parallel agent teams propose hypotheses, a peer-critic panel prunes before GPU spend, and a shared findings board compounds discoveries across hours or days of autonomous search.
 - [autoresearch-evo-db](https://github.com/hgarud/autoresearch) - Evolutionary database fork: integrates MAP-Elites into karpathy/autoresearch by replacing simple TSV logging with a multi-island evolutionary database that returns exploit/explore/random strategy hints to guide the search across diverse solution populations.
+- [autodev](https://github.com/Momoyeyu/autodev) - Anti-self-grading skill: freezes the benchmark and budget before any edit, writes the test first, keeps only changes a script confirms beat the baseline, and reverts everything else.
 
 ### Related Practices / Discussions
 
@@ -603,7 +607,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [autoresearch on Loooom: Teaching a Skill to Improve Itself](https://www.mager.co/blog/2026-03-20-autoresearch-loooom-skills/) - Blog: dogfoods the autoresearch pattern on the learn-anything skill, lifting it from 0% to 87.5% eval pass rate in two iterations and identifying that deterministic evals, golden responses, and eval versioning are critical for LLM-based keep/discard loops.
 - [Autoresearch: The Overnight Loop That Changed the Production Function](https://www.mmntm.net/articles/autoresearch-overnight-loop) - Blog: synthesizes the autoresearch cascade from Karpathy's original loop through financial markets, chess, and rendering, identifying the fixed clock, honest fitness function, and cost convergence as the structural conditions behind the pattern's rapid spread across domains.
 - [拆解 AutoResearch：630 行代码，一晚上百次实验](https://juejin.cn/post/7634432180045086726) - Blog (Chinese): a technical deep-dive into Karpathy's 630-line autoresearch codebase, explaining the fixed-time loop, three-file architecture, and why minimalist design enables overnight autonomous experimentation.
-- [How to stop your autoresearch loop from cheating](https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating) - Blog: Cerebras reports an overnight loop that abandoned the intended experiment and started its own, surfacing evaluator gaming as a first-order failure mode when the agent can read the evaluation setup.
 - [Autoresearch and Context Rot — How a Stateless Agent Loop Avoids Memory Problems](https://www.akshayparkhi.net/2026/Mar/13/autoresearch-and-context-rot-how-a-stateless-agent-loop-avoids-m/) - Blog: analyzes how autoresearch's stateless git keep/revert design sidesteps context-window rot and identifies where it still breaks when experiments require long-horizon reasoning.
 - [The Karpathy Loop: 700 experiments, 2 days, and a glimpse of where AI is heading](https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/) - Fortune: mainstream coverage of Karpathy running 700 autonomous experiments over two days, framing the keep/discard pattern as a shift in how AI research gets done.
 - [koylanai on building an autonomous autoresearch loop for Agent Skills and Context Engineering](https://x.com/koylanai/status/2055132022180331594) - X: describes building a Karpathy-inspired autonomous research loop that discovers sources, scores them with rubrics, and drafts skill updates for context engineering, directly referencing authorsearch and identifying where repos need stronger validation.
@@ -650,7 +653,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [The Agents That Research While You Sleep](https://www.muttdata.ai/insights/the-agents-that-research-while-you-sleep) - Blog: explores the practical implications of autoresearch loops as overnight autonomous experiment runners, framing the shift from human-in-the-loop to human-in-the-morning review.
 - [AutoResearch 2026 @ NeurIPS workshop](https://autoresearch2026.github.io/) - Workshop: organizes a NeurIPS 2026 workshop on end-to-end autonomous scientific research with AI and Robot Scientists, featuring a dual-track call for papers including AI-authored research and an AI peer-review pilot, signaling the field reaching critical mass.
 - [Autobrowse: Browserbase applies Karpathy-style autoresearch to browser agent memory](https://www.browserbase.com/blog/autobrowse) - Blog: describes Autobrowse, a system that iterates a browser agent on a real task until convergence and graduates the winning approach into a reusable skill, drawing a direct parallel to Karpathy's autoresearch harness for learning browser workflows.
-- [meller on using autoresearch to optimize their own HN Show post](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch idea to iterate on and optimize an HN Show post, treating upvote ratio as the metric and keeping only content changes that improved engagement.
 
 ### Software / code workflows (continued)
 
@@ -691,6 +693,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [EvoMap Open-Sources AutoResearch](https://ohsem.me/2026/09/evomap-open-sources-autoresearch-giving-ai-agents-a-way-to-test-their-own-research-ideas/) - News: covers EvoMap open-sourcing AutoResearch, a framework that lets AI agents test their own research ideas from hypothesis to paper-ready evidence, syndicated across multiple outlets.
 - [How AutoResearch Closes the Research Loop Without Hallucinating Success](https://evomap.ai/research/autoresearch-evidence-loop) - Blog: EvoMap's own research post explains how their AutoResearch framework decides what comes next from generated plans via an evidence loop, closing the research cycle without fabricating progress.
 - [One Night of AutoResearch on Reasoning Distillation](https://www.ai-hive.net/post/one-night-of-autoresearch-on-reasoning-distillation) - Blog: reports a single overnight autoresearch run applied to reasoning distillation, iterating on distillation recipes and keeping only changes that improved downstream reasoning quality.
+- [Dan Kondratyuk on the (auto)²-research swarm](https://x.com/hyperparticle/status/2099861544481731058) - X: the rekursiv.ai co-founder reports that a swarm of agents crushed SoTA on Karpathy's NanoChat benchmark in three days by running auto-autoresearch on a harness built over a graph database, with the team writing more than 15,000 entries.
 
 ## Submission format
 
