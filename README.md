@@ -61,16 +61,16 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 99 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 55 entries
+- [Scientific Research](categories/scientific-research.md) — 103 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 57 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 35 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 156 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 170 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 159 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 172 entries
 
 ### Open categories still being seeded
 
@@ -199,6 +199,10 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoMartiniAgent](https://github.com/ljding94/autoMartiniAgent) - Molecular dynamics research: combines an agent skill, MCP server, and autoresearch protocol to automate AA → Martini 3 coarse-grained mapping, applying keep/discard iteration to force-field parameter selection.
 - [qwen3-vl-autoresearch](https://github.com/mikhutchinson/qwen3-vl-autoresearch) - Vision-language research: applies leakage-controlled Qwen3-VL LoRA autoresearch on Apple Silicon, with an honest inconclusive confirmation study that explicitly reports when the loop found no reliable improvement despite rigorous experimental design.
 - [NanoTLM](https://github.com/Luisgarcav/nanotlm) - Reproducible model research: builds a laboratory for thermodynamic language models whose autoresearch controller lets an AI propose architectures but never modify the judge, publishing a frozen-benchmark result where the nanochat baseline still wins at 3.1905 bits per character.
+- [Dream-RSI](https://github.com/zhengkid/Dream-RSI) - Recursive self-improvement: official repository for a method in which agents improve through evolving worlds, published alongside the paper.
+- [ECDSA.Fail: Open Autoresearch](https://arxiv.org/abs/2609.09582) - Cryptographic optimization: humans and agents publish evaluator-verified improvements to a public leaderboard for reversible secp256k1 point-addition circuits, scored by peak qubit width times average depth.
+- [ZeroThesis](https://zerothesis.com) - Multiplayer autoresearch: point any agent at a public research problem, where every verified result is chained into a ledger under the contributor's name.
+- [klue-mrc-autoresearch](https://github.com/YoungjaeDev/klue-mrc-autoresearch) - Korean-language practice: a documented autoresearch run on KLUE-MRC with Unsloth, shipped with its specification, preparation and training scripts, and an analysis notebook.
 
 ### Software / Systems Optimization
 
@@ -259,6 +263,8 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [design-gan](https://github.com/jessholbrook/design-gan) - Website design optimization: runs an autoresearch loop that evolves single-page website designs, where a generator produces sites from a brief, Playwright replays frozen behavioral task suites as the primary score, and a critic reports SUS while axe-core accessibility and runtime correctness act as hard promotion guardrails.
 - [glm-5.3-flash-exl3-4x-dgx-spark](https://github.com/punkjazz-labs/glm-5.3-flash-exl3-4x-dgx-spark) - LLM serving recipe: documents a measured production recipe for GLM-5.3-Flash EXL3 across four NVIDIA DGX Sparks with vLLM TP4, tuned via autoresearch with a watchdog, benchmarks, and every receipt published.
 - [leanSPHINCS](https://github.com/nconsigny/leansphincs) - Post-quantum cryptography: drafts the rules for an autoresearch competition optimizing SPHINCS-style hash-based signatures for Ethereum accounts, applying keep/discard loops to formally verified crypto implementations.
+- [autor3search](https://github.com/autor3search) - Multi-language optimization: autonomous performance optimization for any repository, published as parallel implementations for Python, Rust, Go, Java, C#, JavaScript, TypeScript, and Swift.
+- [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
 
 ### Evaluation / Red Teaming
 
@@ -516,6 +522,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [claude-autoresearch-skill](https://github.com/AlexWortega/claude-autoresearch-skill) - Claude Code skill: wraps karpathy/autoresearch with AutoScientists-inspired generational loops where parallel agent teams propose hypotheses, a peer-critic panel prunes before GPU spend, and a shared findings board compounds discoveries across hours or days of autonomous search.
 - [autoresearch-evo-db](https://github.com/hgarud/autoresearch) - Evolutionary database fork: integrates MAP-Elites into karpathy/autoresearch by replacing simple TSV logging with a multi-island evolutionary database that returns exploit/explore/random strategy hints to guide the search across diverse solution populations.
 - [autodev](https://github.com/Momoyeyu/autodev) - Anti-self-grading skill: freezes the benchmark and budget before any edit, writes the test first, keeps only changes a script confirms beat the baseline, and reverts everything else.
+- [SoL-Pi](https://github.com/NVlabs/SoL-Pi) - Agent harness efficiency: NVIDIA Labs scales auto-research loops so a Pi harness spends less without getting less done, shipping the paper, the extension, and 20 test files.
+- [pi-Dream-RSI](https://github.com/juanmackie/pi-Dream-RSI) - Recursive self-improvement: implements the Dream-RSI method as a Pi extension, keeping the method's paper and its own extension tests in the repository.
+- [sapling](https://github.com/nomitchell/sapling) - Interactive autoresearch: a runtime and web workspace for driving autoresearch loops by hand rather than overnight, with its own test suite.
 
 ### Related Practices / Discussions
 
@@ -719,6 +728,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [How AutoResearch Closes the Research Loop Without Hallucinating Success](https://evomap.ai/research/autoresearch-evidence-loop) - Blog: EvoMap's own research post explains how their AutoResearch framework decides what comes next from generated plans via an evidence loop, closing the research cycle without fabricating progress.
 - [One Night of AutoResearch on Reasoning Distillation](https://www.ai-hive.net/post/one-night-of-autoresearch-on-reasoning-distillation) - Blog: reports a single overnight autoresearch run applied to reasoning distillation, iterating on distillation recipes and keeping only changes that improved downstream reasoning quality.
 - [Dan Kondratyuk on the (auto)²-research swarm](https://x.com/hyperparticle/status/2099861544481731058) - X: the rekursiv.ai co-founder reports that a swarm of agents crushed SoTA on Karpathy's NanoChat benchmark in three days by running auto-autoresearch on a harness built over a graph database, with the team writing more than 15,000 entries.
+- [A repo gained 3,278 stars while GitHub showed Karpathy as a contributor](https://news.ycombinator.com/item?id=49697367) - Hacker News: discussion about a repository whose star growth and attributed contributor did not match its actual history, a caution about reading star counts as evidence.
+- [Using Devin to run autoresearch overnight on Modal](https://x.com/jaredpalmer/status/2101110281300848799) - X: the author of a small Jev-like model sets Devin loose on an overnight autoresearch run to improve a Qwen3-0.6B checkpoint, the same person appearing in both ecosystems.
 
 ## Submission format
 
