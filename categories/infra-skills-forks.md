@@ -169,3 +169,4 @@ Use this category for ecosystem entries that are directly about autoresearch inf
 - [SoL-Pi](https://github.com/NVlabs/SoL-Pi) - Agent harness efficiency: NVIDIA Labs scales auto-research loops so a Pi harness spends less without getting less done, shipping the paper, the extension, and 20 test files.
 - [pi-Dream-RSI](https://github.com/juanmackie/pi-Dream-RSI) - Recursive self-improvement: implements the Dream-RSI method as a Pi extension, keeping the method's paper and its own extension tests in the repository.
 - [sapling](https://github.com/nomitchell/sapling) - Interactive autoresearch: a runtime and web workspace for driving autoresearch loops by hand rather than overnight, with its own test suite.
+- [labloop](https://github.com/plicara/labloop) - Experiment loop: proposes a change, runs it time-boxed, and keeps it only if the metric improves, built as a deliberate alternative to autoresearch's single thread of commits.

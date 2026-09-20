@@ -61,16 +61,16 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 103 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 57 entries
+- [Scientific Research](categories/scientific-research.md) — 104 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 58 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
-- [Finance / Trading](categories/finance-trading.md) — 35 entries
+- [Finance / Trading](categories/finance-trading.md) — 36 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 159 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 172 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 160 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
 
 ### Open categories still being seeded
 
@@ -203,6 +203,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [ECDSA.Fail: Open Autoresearch](https://arxiv.org/abs/2609.09582) - Cryptographic optimization: humans and agents publish evaluator-verified improvements to a public leaderboard for reversible secp256k1 point-addition circuits, scored by peak qubit width times average depth.
 - [ZeroThesis](https://zerothesis.com) - Multiplayer autoresearch: point any agent at a public research problem, where every verified result is chained into a ledger under the contributor's name.
 - [klue-mrc-autoresearch](https://github.com/YoungjaeDev/klue-mrc-autoresearch) - Korean-language practice: a documented autoresearch run on KLUE-MRC with Unsloth, shipped with its specification, preparation and training scripts, and an analysis notebook.
+- [Disciples2-RL](https://github.com/Alian3785/Disciples2-RL) - Reinforcement learning: trains a superhuman agent for Disciples II and uses autoresearch to sweep configurations instead of hand-tuning them.
 
 ### Software / Systems Optimization
 
@@ -265,6 +266,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [leanSPHINCS](https://github.com/nconsigny/leansphincs) - Post-quantum cryptography: drafts the rules for an autoresearch competition optimizing SPHINCS-style hash-based signatures for Ethereum accounts, applying keep/discard loops to formally verified crypto implementations.
 - [autor3search](https://github.com/autor3search) - Multi-language optimization: autonomous performance optimization for any repository, published as parallel implementations for Python, Rust, Go, Java, C#, JavaScript, TypeScript, and Swift.
 - [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
+- [Plank-Lab](https://github.com/Kuinox/Plank-Lab) - Benchmark harness: vibe-coded benchmarks, fuzzing, and a parallel autoresearch harness with its own dashboard, for the Plank project.
 
 ### Evaluation / Red Teaming
 
@@ -337,6 +339,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [Auto-Quant](https://github.com/TraderAlice/Auto-Quant) - Crypto trading research: applies Karpathy's autoresearch pattern to FreqTrade strategies on a 5-pair crypto universe, running backtest-driven keep/discard loops that evolved multi-strategy lineups across five versioned runs.
 - [noahroboros](https://github.com/upupnoah/noahroboros) - Crypto trading research: applies Karpathy-style autoresearch in Rust to BTC/ETH/SOL strategy optimization over 88 backtest experiments, discovering a simplified RSI(32) momentum strategy with a 2.569 composite score.
 - [trading-autoresearch](https://github.com/ilasek/trading-autoresearch) - Investment strategy research: runs hypothesize → write a candidate strategy → backtest under a fixed protocol → keep-or-discard → journal the learning continuously and unattended, while never executing trades.
+- [football-prediction-autoresearch](https://github.com/kaspersgit/football-prediction-autoresearch) - Value betting: trains walk-forward models across eleven European leagues, compares their probabilities against B365 market odds, and ships explicit research configurations for comparing experiments.
 
 ### Personal Knowledge / Humanities
 
@@ -525,6 +528,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [SoL-Pi](https://github.com/NVlabs/SoL-Pi) - Agent harness efficiency: NVIDIA Labs scales auto-research loops so a Pi harness spends less without getting less done, shipping the paper, the extension, and 20 test files.
 - [pi-Dream-RSI](https://github.com/juanmackie/pi-Dream-RSI) - Recursive self-improvement: implements the Dream-RSI method as a Pi extension, keeping the method's paper and its own extension tests in the repository.
 - [sapling](https://github.com/nomitchell/sapling) - Interactive autoresearch: a runtime and web workspace for driving autoresearch loops by hand rather than overnight, with its own test suite.
+- [labloop](https://github.com/plicara/labloop) - Experiment loop: proposes a change, runs it time-boxed, and keeps it only if the metric improves, built as a deliberate alternative to autoresearch's single thread of commits.
 
 ### Related Practices / Discussions
 
@@ -730,6 +734,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Dan Kondratyuk on the (auto)²-research swarm](https://x.com/hyperparticle/status/2099861544481731058) - X: the rekursiv.ai co-founder reports that a swarm of agents crushed SoTA on Karpathy's NanoChat benchmark in three days by running auto-autoresearch on a harness built over a graph database, with the team writing more than 15,000 entries.
 - [A repo gained 3,278 stars while GitHub showed Karpathy as a contributor](https://news.ycombinator.com/item?id=49697367) - Hacker News: discussion about a repository whose star growth and attributed contributor did not match its actual history, a caution about reading star counts as evidence.
 - [Using Devin to run autoresearch overnight on Modal](https://x.com/jaredpalmer/status/2101110281300848799) - X: the author of a small Jev-like model sets Devin loose on an overnight autoresearch run to improve a Qwen3-0.6B checkpoint, the same person appearing in both ecosystems.
+- [Karpathy: the next step is asynchronously massively collaborative](https://x.com/karpathy/status/2030705271627284816) - X: the author states that the next step for autoresearch is SETI@home-style asynchronous mass collaboration between agents, the framing that `autoresearch-at-home` later implemented.
+- [Two loop tasks ate four Pro accounts](https://x.com/DIYgod/status/2036343520680878234) - X (Chinese): a practitioner reports that running just two autoresearch loop tasks exhausted four Pro subscriptions, putting the constraint on unattended looping at token spend rather than capability.
 
 ## Submission format
 

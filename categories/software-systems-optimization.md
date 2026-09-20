@@ -67,3 +67,4 @@ Use this category for examples where autoresearch improves code, kernels, models
 - [leanSPHINCS](https://github.com/nconsigny/leansphincs) - Post-quantum cryptography: drafts the rules for an autoresearch competition optimizing SPHINCS-style hash-based signatures for Ethereum accounts, applying keep/discard loops to formally verified crypto implementations.
 - [autor3search](https://github.com/autor3search) - Multi-language optimization: autonomous performance optimization for any repository, published as parallel implementations for Python, Rust, Go, Java, C#, JavaScript, TypeScript, and Swift.
 - [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
+- [Plank-Lab](https://github.com/Kuinox/Plank-Lab) - Benchmark harness: vibe-coded benchmarks, fuzzing, and a parallel autoresearch harness with its own dashboard, for the Plank project.
