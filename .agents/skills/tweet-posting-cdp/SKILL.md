@@ -131,6 +131,16 @@ So: Enter = `{type:'rawKeyDown', key:'Enter', code:'Enter', windowsVirtualKeyCod
 
 If you strip trailing newlines before comparing, a step that only adds a blank line looks like no progress → the loop declares a stall. Keep newlines in the readback and use it for both the prefix check and the cursor; only strip trailing newlines for the final equality check.
 
+### 4b. X autosaves the composer draft server-side
+
+A draft left in the composer for more than a few seconds is saved by X and **restored by a reload**, so reloading alone does not always discard it (observed with a 672-character draft: two reloads both came back with the text). Clearing via DOM manipulation does not reliably clear the saved copy either — a Range selection plus `execCommand('delete')` empties the visible editor but also strips its paragraph nodes, leaving Draft.js desynced until the next reload repairs it.
+
+Consequences, in order of importance:
+
+- `resetComposer` retries the reload up to four times, reading the composer twice each round (a restored draft can appear later than the DOM finishing), and **aborts if the composer is still dirty**. The failure mode is a safe abort, never writing on top of an old draft.
+- A `DRY_RUN` right before a real post can therefore leave a draft behind. The real run will either clear it or abort — it will not silently prepend it.
+- If a draft is stuck, clear it from X's own Drafts page rather than fighting the DOM.
+
 ### 5. Never post from a non-`/home` tab
 
 `tweetTextarea_0` exists on status pages as the reply composer. Replying to a stranger's tweet is the worst possible failure. The script hard-blocks on `pathname !== '/home'` and on a button label that isn't `发帖`/`Post`.
