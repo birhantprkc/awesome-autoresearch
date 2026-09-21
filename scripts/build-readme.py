@@ -20,12 +20,12 @@ CATEGORIES = [
     "market-research.md",
     "workflow-automation.md",
     "infra-skills-forks.md",
+    "content-research.md",
     "related-practices-discussions.md",
 ]
 
 OPEN_TRACKING = [
     "competitive-intelligence.md",
-    "content-research.md",
     "customer-discovery.md",
     "lead-generation.md",
     "trend-monitoring.md",

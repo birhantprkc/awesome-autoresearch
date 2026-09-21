@@ -10,4 +10,4 @@ Use this category for examples where autoresearch gathers source material, topic
 
 ## Entries
 
-<!-- No directly relevant autoresearch examples added yet -->
+- [AI engineering book lab](https://github.com/isatimur/ai-engineering-book-lab) - Source-anchored publishing: a book on AI engineering auto-researched from 794 practitioner talks, where every claim links back to the talk it came from.

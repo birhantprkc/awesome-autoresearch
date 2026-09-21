@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 104 entries
+- [Scientific Research](categories/scientific-research.md) — 106 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 58 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 36 entries
@@ -69,13 +69,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 160 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 163 entries
+- [Content Research](categories/content-research.md) — 1 entry
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
 
 ### Open categories still being seeded
 
 - [Competitive Intelligence](categories/competitive-intelligence.md) — 0 entries
-- [Content Research](categories/content-research.md) — 0 entries
 - [Customer Discovery](categories/customer-discovery.md) — 0 entries
 - [Lead Generation](categories/lead-generation.md) — 0 entries
 - [Trend Monitoring](categories/trend-monitoring.md) — 0 entries
@@ -92,6 +92,7 @@ Each entry lives in exactly one category. When a project could fit multiple cate
 - [Knowledge Base / RAG Preparation](#knowledge-base-rag-preparation) ([source](categories/knowledge-base-rag-preparation.md))
 - [Workflow Automation](#workflow-automation) ([source](categories/workflow-automation.md))
 - [Infra / Skills / Forks](#infra-skills-forks) ([source](categories/infra-skills-forks.md))
+- [Content Research](#content-research) ([source](categories/content-research.md))
 - [Related Practices / Discussions](#related-practices-discussions) ([source](categories/related-practices-discussions.md))
 
 ## Full list
@@ -204,6 +205,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [ZeroThesis](https://zerothesis.com) - Multiplayer autoresearch: point any agent at a public research problem, where every verified result is chained into a ledger under the contributor's name.
 - [klue-mrc-autoresearch](https://github.com/YoungjaeDev/klue-mrc-autoresearch) - Korean-language practice: a documented autoresearch run on KLUE-MRC with Unsloth, shipped with its specification, preparation and training scripts, and an analysis notebook.
 - [Disciples2-RL](https://github.com/Alian3785/Disciples2-RL) - Reinforcement learning: trains a superhuman agent for Disciples II and uses autoresearch to sweep configurations instead of hand-tuning them.
+- [Amicode](https://github.com/harmoniqs/amicode) - Quantum control: a VS Code autonomous research studio in which nothing promotes below F = 0.99, every run is captured, and every pulse is versioned for warm start.
+- [CNMS Living FOM](https://github.com/zackwoodel-debug/cnms-living-fom) - Materials discovery: a figure-of-merit platform for thin-film synthesis whose Bayesian optimisation loop is gated by an autoresearch audit over a fixed retrieval benchmark.
 
 ### Software / Systems Optimization
 
@@ -529,6 +532,15 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [pi-Dream-RSI](https://github.com/juanmackie/pi-Dream-RSI) - Recursive self-improvement: implements the Dream-RSI method as a Pi extension, keeping the method's paper and its own extension tests in the repository.
 - [sapling](https://github.com/nomitchell/sapling) - Interactive autoresearch: a runtime and web workspace for driving autoresearch loops by hand rather than overnight, with its own test suite.
 - [labloop](https://github.com/plicara/labloop) - Experiment loop: proposes a change, runs it time-boxed, and keeps it only if the metric improves, built as a deliberate alternative to autoresearch's single thread of commits.
+- [OpenResearch](https://github.com/alphaXiv/OpenResearch) - Research harness: alphaXiv's tool that turns coding agents into research agents, running the loop locally with a nanochat demonstration and its own committed evidence trail.
+- [autoresearch-mcp](https://github.com/ShreeMulay/autoresearch-mcp) - MCP ecosystem: server that brings Karpathy's autoresearch pattern to any AI coding session, with a technique catalog, experiment scaffolding, and SQLite-backed tracking.
+- [cycleresearch](https://github.com/mengqvist/cycleresearch) - Autonomous research loop: drop a few files into an existing repository, describe the problem, and let an agent run experiments and keep a diary of what it tried, all inside Docker.
+
+### Content Research
+
+Source file: [`categories/content-research.md`](categories/content-research.md)
+
+- [AI engineering book lab](https://github.com/isatimur/ai-engineering-book-lab) - Source-anchored publishing: a book on AI engineering auto-researched from 794 practitioner talks, where every claim links back to the talk it came from.
 
 ### Related Practices / Discussions
 
