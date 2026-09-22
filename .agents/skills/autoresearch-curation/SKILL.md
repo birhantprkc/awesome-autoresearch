@@ -214,13 +214,26 @@ Before adding a repository, check depth (see CONTRIBUTING.md, "AI-assisted work,
 - Are the numbers in the entry traceable to the linked page? Strip what you cannot verify.
 - Is it a launch, funding, or press announcement? That is discussion material at best, never an implementation entry.
 
+### Before rejecting for "does not mention autoresearch", look at the code
+
+A repository can be a genuine autoresearch implementation and never use the word. Two consecutive sweeps nearly dropped large projects this way — one a 1,298-star harness, the other an agent research studio — because the README described the loop in behavioural terms ("nothing promotes below F = 0.99", "the loop gets smarter as you use it") rather than borrowing the name.
+
+The name-based search that drives this sweep (`gh search repos "autoresearch"`) is structurally blind to that class: projects that treat autoresearch as a component or a method, not as a brand. They are often the larger ones. So before rejecting on a README read, check the repository's own code:
+
+- `gh search code '"autoresearch" repo:OWNER/REPO'` — the word may be in the tree without being in the README, and a directory is stronger evidence than a sentence.
+- `gh search code 'Karpathy repo:OWNER/REPO'` — a citation counts even when the README is silent.
+- Read the file tree for the loop's signature layout: a `program.md` plus a `prepare.py`/`train.py` pair, or an `autoresearch/` directory. That structure is itself the evidence.
+- Ask what promotes a change. A stated promotion gate (a metric threshold, a keep/discard rule, a versioned baseline) satisfies the inclusion rule even when the word is absent.
+
+The rule is about the loop, not the label. A project that modifies, measures, and keeps or discards is in scope whether or not it says the name — and a project that merely calls itself autoresearch is not, which is the other half of the same rule.
+
 ## Handling pull requests
 
 When a contributor opens a PR:
 
 1. Verify the repository, do not just read the PR body — file tree, source, tests, commit history, and whether the code really calls what it claims.
 2. If the repository is thinner than the entry implies (README-only claims, no runnable check, docs outweighing code), say so in a review comment and ask for the missing evidence rather than merging or silently rejecting.
-3. When an author has already had three entries accepted in a rolling seven-day window, state the rule in the PR comment before acting on it, and queue the extra entries to a later cycle instead of rejecting them. Quote the CONTRIBUTING section so the contributor knows it is policy, not a judgement about them.
+3. When an author has already had three entries accepted in the current pass, state the rule in the PR comment before acting on it, and queue the extra entries to a later pass instead of rejecting them. Quote the CONTRIBUTING section so the contributor knows it is policy, not a judgement about them.
 4. Never edit a contributor's wording purely for style; do fix inaccurate claims.
 
 ## Deliverable checklist
