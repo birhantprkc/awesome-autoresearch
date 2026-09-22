@@ -21,6 +21,7 @@ CATEGORIES = [
     "workflow-automation.md",
     "infra-skills-forks.md",
     "content-research.md",
+    "marketing-gtm.md",
     "related-practices-discussions.md",
 ]
 

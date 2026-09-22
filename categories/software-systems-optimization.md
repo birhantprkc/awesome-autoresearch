@@ -68,3 +68,4 @@ Use this category for examples where autoresearch improves code, kernels, models
 - [autor3search](https://github.com/autor3search) - Multi-language optimization: autonomous performance optimization for any repository, published as parallel implementations for Python, Rust, Go, Java, C#, JavaScript, TypeScript, and Swift.
 - [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
 - [Plank-Lab](https://github.com/Kuinox/Plank-Lab) - Benchmark harness: vibe-coded benchmarks, fuzzing, and a parallel autoresearch harness with its own dashboard, for the Plank project.
+- [qx-mini-c](https://github.com/Nando2392/qx-mini-c) - Inference runtime: correctness-first C runtime and QXF format for local Qwen3-30B-A3B MoE inference, tuned with an autoresearch loop.

@@ -61,16 +61,17 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 106 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 58 entries
+- [Scientific Research](categories/scientific-research.md) — 108 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 59 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
-- [Finance / Trading](categories/finance-trading.md) — 36 entries
+- [Finance / Trading](categories/finance-trading.md) — 37 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 163 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 164 entries
 - [Content Research](categories/content-research.md) — 1 entry
+- [Marketing & GTM](categories/marketing-gtm.md) — 3 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
 
 ### Open categories still being seeded
@@ -93,6 +94,7 @@ Each entry lives in exactly one category. When a project could fit multiple cate
 - [Workflow Automation](#workflow-automation) ([source](categories/workflow-automation.md))
 - [Infra / Skills / Forks](#infra-skills-forks) ([source](categories/infra-skills-forks.md))
 - [Content Research](#content-research) ([source](categories/content-research.md))
+- [Marketing & GTM](#marketing-gtm) ([source](categories/marketing-gtm.md))
 - [Related Practices / Discussions](#related-practices-discussions) ([source](categories/related-practices-discussions.md))
 
 ## Full list
@@ -207,6 +209,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Disciples2-RL](https://github.com/Alian3785/Disciples2-RL) - Reinforcement learning: trains a superhuman agent for Disciples II and uses autoresearch to sweep configurations instead of hand-tuning them.
 - [Amicode](https://github.com/harmoniqs/amicode) - Quantum control: a VS Code autonomous research studio in which nothing promotes below F = 0.99, every run is captured, and every pulse is versioned for warm start.
 - [CNMS Living FOM](https://github.com/zackwoodel-debug/cnms-living-fom) - Materials discovery: a figure-of-merit platform for thin-film synthesis whose Bayesian optimisation loop is gated by an autoresearch audit over a fixed retrieval benchmark.
+- [agentic-imodels](https://github.com/csinva/agentic-imodels) - Interpretable data science: agent-interpretable data-science tools that were evolved through an autoresearch loop rather than written by hand.
+- [SCUT-FBP5500 DINOv3](https://github.com/Isaac-Hirsch/scut-fbp5500-dinov3-ce) - Vision research: facial beauty prediction with a DINOv3 ViT-H+ and full-rating-distribution cross-entropy, its recipe tuned by autoresearch.
 
 ### Software / Systems Optimization
 
@@ -270,6 +274,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autor3search](https://github.com/autor3search) - Multi-language optimization: autonomous performance optimization for any repository, published as parallel implementations for Python, Rust, Go, Java, C#, JavaScript, TypeScript, and Swift.
 - [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
 - [Plank-Lab](https://github.com/Kuinox/Plank-Lab) - Benchmark harness: vibe-coded benchmarks, fuzzing, and a parallel autoresearch harness with its own dashboard, for the Plank project.
+- [qx-mini-c](https://github.com/Nando2392/qx-mini-c) - Inference runtime: correctness-first C runtime and QXF format for local Qwen3-30B-A3B MoE inference, tuned with an autoresearch loop.
 
 ### Evaluation / Red Teaming
 
@@ -343,6 +348,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [noahroboros](https://github.com/upupnoah/noahroboros) - Crypto trading research: applies Karpathy-style autoresearch in Rust to BTC/ETH/SOL strategy optimization over 88 backtest experiments, discovering a simplified RSI(32) momentum strategy with a 2.569 composite score.
 - [trading-autoresearch](https://github.com/ilasek/trading-autoresearch) - Investment strategy research: runs hypothesize → write a candidate strategy → backtest under a fixed protocol → keep-or-discard → journal the learning continuously and unattended, while never executing trades.
 - [football-prediction-autoresearch](https://github.com/kaspersgit/football-prediction-autoresearch) - Value betting: trains walk-forward models across eleven European leagues, compares their probabilities against B365 market odds, and ships explicit research configurations for comparing experiments.
+- [jq-playwright-auto-research](https://github.com/yyh-boop/jq-playwright-auto-research) - Quant research: drives the JoinQuant platform through Playwright so the autoresearch loop can iterate on Chinese equity strategies.
 
 ### Personal Knowledge / Humanities
 
@@ -535,12 +541,21 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [OpenResearch](https://github.com/alphaXiv/OpenResearch) - Research harness: alphaXiv's tool that turns coding agents into research agents, running the loop locally with a nanochat demonstration and its own committed evidence trail.
 - [autoresearch-mcp](https://github.com/ShreeMulay/autoresearch-mcp) - MCP ecosystem: server that brings Karpathy's autoresearch pattern to any AI coding session, with a technique catalog, experiment scaffolding, and SQLite-backed tracking.
 - [cycleresearch](https://github.com/mengqvist/cycleresearch) - Autonomous research loop: drop a few files into an existing repository, describe the problem, and let an agent run experiments and keep a diary of what it tried, all inside Docker.
+- [autocontext](https://github.com/greyhaven-ai/autocontext) - Self-improving harness: a recursive harness for agents that carries its own autoresearch training module, with more than two thousand test files behind it.
 
 ### Content Research
 
 Source file: [`categories/content-research.md`](categories/content-research.md)
 
 - [AI engineering book lab](https://github.com/isatimur/ai-engineering-book-lab) - Source-anchored publishing: a book on AI engineering auto-researched from 794 practitioner talks, where every claim links back to the talk it came from.
+
+### Marketing & GTM
+
+Source file: [`categories/marketing-gtm.md`](categories/marketing-gtm.md)
+
+- [mmm-research](https://github.com/lucianfialho/mmm-research) - Marketing attribution: applies the autoresearch loop to Marketing Mix Modeling across roughly 137 experiments, taking holdout WAPE from a 2.73% OLS baseline to 0.23% against Google Meridian's 4.04%.
+- [gtm-autoresearch](https://github.com/Dignitycatshark668/gtm-autoresearch) - SaaS go-to-market: optimizes GTM scoring models with Karpathy-style autoresearch loops, testing each change against a retention signal instead of hand-tuning it.
+- [GTM Command Center](https://github.com/Organized-AI/gtm-command-center) - Go-to-market operations: pairs an impact map and a 3D container graph with an autoresearch loop that keeps improving the model behind them.
 
 ### Related Practices / Discussions
 
@@ -564,7 +579,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy's AutoResearch: How an ML Tool Became a Marketing Optimizer](https://monkfrom.earth/blogs/karpathy-autoresearch-explained-ml-to-marketing) - Blog: reports that Ole Lehmann adapted the autoresearch loop to landing-page copy optimization, lifting a Claude copywriting skill from 56% to 92% checklist pass rate overnight for ~$15, and also applied it to website speed (1100ms → 67ms) and cold outreach.
 - [GoatGaucho on applying Karpathy's autoresearch to TrustLayer trust scoring](https://x.com/Goat_Gaucho/status/2036546607739707879) - X: reports using a mutable scoring config plus verifier on 120 labeled agents to push sybil-risk F1 from 0% to 95.9% in two keep-or-revert experiments before shipping the new thresholds to production.
 - [I used Karpathy's AutoResearch while building my app - got 80% better AI outputs. Here's exactly how I applied it outside ML](https://www.reddit.com/r/microsaas/comments/1snubrm/i_used_karpathys_autoresearch_while_building_my/) - Reddit: says a Farcast GTM tool used an autoresearch-style ICP and channel loop against real data, keeping only more specific outreach and community recommendations and reporting roughly 80% better outputs.
-- [Applied autoresearch to Marketing Mix Modeling — 12x improvement, beat Google Meridian](https://github.com/karpathy/autoresearch/discussions/497) - GitHub Discussion: reports applying Karpathy's autoresearch loop to Marketing Mix Modeling (MMM) and achieving 12x lift over Google Meridian by iterating on model components with keep/discard decisions.
 
 ### Workflow automation / consumer ops
 
@@ -748,6 +762,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Using Devin to run autoresearch overnight on Modal](https://x.com/jaredpalmer/status/2101110281300848799) - X: the author of a small Jev-like model sets Devin loose on an overnight autoresearch run to improve a Qwen3-0.6B checkpoint, the same person appearing in both ecosystems.
 - [Karpathy: the next step is asynchronously massively collaborative](https://x.com/karpathy/status/2030705271627284816) - X: the author states that the next step for autoresearch is SETI@home-style asynchronous mass collaboration between agents, the framing that `autoresearch-at-home` later implemented.
 - [Two loop tasks ate four Pro accounts](https://x.com/DIYgod/status/2036343520680878234) - X (Chinese): a practitioner reports that running just two autoresearch loop tasks exhausted four Pro subscriptions, putting the constraint on unattended looping at token spend rather than capability.
+- [Deli_AutoResearch ships three LLM-authored survey papers](https://x.com/victor207755822/status/2062585403136508400) - X: reports a project update in which three complete survey papers, one new and two revised, were authored end to end by LLM agents - the deliverable being the survey rather than the experiment.
 
 ## Submission format
 
