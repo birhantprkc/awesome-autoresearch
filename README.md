@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 108 entries
+- [Scientific Research](categories/scientific-research.md) — 109 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 59 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
@@ -69,9 +69,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 164 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 166 entries
 - [Content Research](categories/content-research.md) — 1 entry
-- [Marketing & GTM](categories/marketing-gtm.md) — 3 entries
+- [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
 
 ### Open categories still being seeded
@@ -211,6 +211,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [CNMS Living FOM](https://github.com/zackwoodel-debug/cnms-living-fom) - Materials discovery: a figure-of-merit platform for thin-film synthesis whose Bayesian optimisation loop is gated by an autoresearch audit over a fixed retrieval benchmark.
 - [agentic-imodels](https://github.com/csinva/agentic-imodels) - Interpretable data science: agent-interpretable data-science tools that were evolved through an autoresearch loop rather than written by hand.
 - [SCUT-FBP5500 DINOv3](https://github.com/Isaac-Hirsch/scut-fbp5500-dinov3-ce) - Vision research: facial beauty prediction with a DINOv3 ViT-H+ and full-rating-distribution cross-entropy, its recipe tuned by autoresearch.
+- [boldt-posttrain-autoresearch](https://github.com/mayflower/boldt-posttrain-autoresearch) - German-language post-training: runs an AutoResearch loop over a German 1B instruction model - branch, train a specialist, merge, evaluate, promote - with 56 test files behind it.
 
 ### Software / Systems Optimization
 
@@ -542,6 +543,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-mcp](https://github.com/ShreeMulay/autoresearch-mcp) - MCP ecosystem: server that brings Karpathy's autoresearch pattern to any AI coding session, with a technique catalog, experiment scaffolding, and SQLite-backed tracking.
 - [cycleresearch](https://github.com/mengqvist/cycleresearch) - Autonomous research loop: drop a few files into an existing repository, describe the problem, and let an agent run experiments and keep a diary of what it tried, all inside Docker.
 - [autocontext](https://github.com/greyhaven-ai/autocontext) - Self-improving harness: a recursive harness for agents that carries its own autoresearch training module, with more than two thousand test files behind it.
+- [GPT from Scratch course](https://github.com/tal-giladi/gpt-from-scratch-course) - Learning material: twenty graded, CPU-only exercises that work through a real GPT pretraining stack by reading karpathy/autoresearch line by line.
+- [DSH Autoresearch](https://github.com/aa2246740/dsh-autoresearch) - DeepSeek Harness plugin: a durable experiment loop whose create, run and monitor steps surface in the official Web GUI.
 
 ### Content Research
 
@@ -556,6 +559,7 @@ Source file: [`categories/marketing-gtm.md`](categories/marketing-gtm.md)
 - [mmm-research](https://github.com/lucianfialho/mmm-research) - Marketing attribution: applies the autoresearch loop to Marketing Mix Modeling across roughly 137 experiments, taking holdout WAPE from a 2.73% OLS baseline to 0.23% against Google Meridian's 4.04%.
 - [gtm-autoresearch](https://github.com/Dignitycatshark668/gtm-autoresearch) - SaaS go-to-market: optimizes GTM scoring models with Karpathy-style autoresearch loops, testing each change against a retention signal instead of hand-tuning it.
 - [GTM Command Center](https://github.com/Organized-AI/gtm-command-center) - Go-to-market operations: pairs an impact map and a 3D container graph with an autoresearch loop that keeps improving the model behind them.
+- [gtm-autoresearch](https://github.com/Organized-AI/gtm-autoresearch) - Go-to-market containers: a Karpathy-style loop that mutates GTM container configuration, scores the result structurally, and keeps only the variants that improve it.
 
 ### Related Practices / Discussions
 
