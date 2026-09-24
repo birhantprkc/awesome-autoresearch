@@ -62,17 +62,17 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 109 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 59 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 63 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 166 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 167 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 175 entries
 
 ### Open categories still being seeded
 
@@ -276,6 +276,10 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Makefaster](https://makefaster.dev) - Web performance: a hosted service that runs an autoresearch loop to make a site faster automatically.
 - [Plank-Lab](https://github.com/Kuinox/Plank-Lab) - Benchmark harness: vibe-coded benchmarks, fuzzing, and a parallel autoresearch harness with its own dashboard, for the Plank project.
 - [qx-mini-c](https://github.com/Nando2392/qx-mini-c) - Inference runtime: correctness-first C runtime and QXF format for local Qwen3-30B-A3B MoE inference, tuned with an autoresearch loop.
+- [libreoffice-rs](https://github.com/clark-labs-inc/libreoffice-rs) - Systems software: a pure-Rust LibreOffice CLI, 151 files with its own CI and a STATUS.md, built by an autoresearch loop that iteratively optimised DOCX/XLSX/PPTX/ODF conversion.
+- [Auto-research with codex: a 232x faster kernel](https://sankalp.bearblog.dev/autoresearch/) - Kernel optimisation: a write-up of one codex autoresearch loop taking a kernel to 232x faster, with the measured before and after and what the loop rejected on the way (HN 457 points).
+- [Autoresearch, Claude and Constrained Optimization](https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/) - Constrained optimisation: runs the loop where the metric is not free to move, so an accepted change has to satisfy a constraint as well as improve the objective (HN 33 points).
+- [factory](https://github.com/watt-mind/factory) - Self-building software: a runtime for improvement loops where the tracker is the control plane, git is the truth, and CI is the promotion gate.
 
 ### Evaluation / Red Teaming
 
@@ -545,6 +549,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autocontext](https://github.com/greyhaven-ai/autocontext) - Self-improving harness: a recursive harness for agents that carries its own autoresearch training module, with more than two thousand test files behind it.
 - [GPT from Scratch course](https://github.com/tal-giladi/gpt-from-scratch-course) - Learning material: twenty graded, CPU-only exercises that work through a real GPT pretraining stack by reading karpathy/autoresearch line by line.
 - [DSH Autoresearch](https://github.com/aa2246740/dsh-autoresearch) - DeepSeek Harness plugin: a durable experiment loop whose create, run and monitor steps surface in the official Web GUI.
+- [Agent-Loop-Skills](https://github.com/gaasher/Agent-Loop-Skills) - Portable skills: drop-in agentic loops for autoresearch, red-teaming, code/SQL/prompt optimisation and scientific writing, each gated on verification, native on Claude Code and portable to Codex and Cursor.
 
 ### Content Research
 
@@ -693,7 +698,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 - [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
 - [Kirill Krainov on adapting autoresearch for agentic coding skill improvement](https://zerocopy.blog/2026/03/25/karpathys-autoresearch-improving-agentic-coding-skills/) - Blog: adapts Karpathy's autoresearch loop with multi-metric evaluation (correctness, clarity, performance, completeness) to build a self-improving agentic coding harness that iterates on skill prompts through deterministic experiments and stateless keep/discard cycles.
-- [Show HN: LibreOffice-rs — pure-Rust LibreOffice built using autoresearch](https://news.ycombinator.com/item?id=38773512) - Hacker News: reports building a pure-Rust DOCX/XLSX/PPTX/ODF toolkit using Karpathy-style autoresearch loops to iteratively optimize format conversions and benchmark throughput against LibreOffice.
 - [I had Codex iterate on its own AGENTS.md 8 times and measured each against real PRs](https://www.stet.sh/blog/how-i-used-codex-to-improve-its-own-agents-md) - Blog: uses Codex's /goal autoresearch loop to iterate AGENTS.md through 8 candidates on a 5-task training slice, then validates on a 10-task holdout that reveals the best candidate still regressed on boundary judgment.
 - [Tobi Lütke on /autoresearch making Liquid 53% faster](https://x.com/tobi/status/2032212531846971413) - X: reports running `/autoresearch` on the Shopify Liquid template engine codebase and achieving 53% faster combined parse+render time through autonomous keep/discard iterations.
 - [Autoresearch for Refactoring Code](https://taoofmac.com/space/notes/2026/03/29/1300) - Blog: describes applying the autoresearch keep/discard pattern to refactoring tasks, treating code quality metrics as the evaluation signal and iterating on one file at a time.
@@ -767,6 +771,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy: the next step is asynchronously massively collaborative](https://x.com/karpathy/status/2030705271627284816) - X: the author states that the next step for autoresearch is SETI@home-style asynchronous mass collaboration between agents, the framing that `autoresearch-at-home` later implemented.
 - [Two loop tasks ate four Pro accounts](https://x.com/DIYgod/status/2036343520680878234) - X (Chinese): a practitioner reports that running just two autoresearch loop tasks exhausted four Pro subscriptions, putting the constraint on unattended looping at token spend rather than capability.
 - [Deli_AutoResearch ships three LLM-authored survey papers](https://x.com/victor207755822/status/2062585403136508400) - X: reports a project update in which three complete survey papers, one new and two revised, were authored end to end by LLM agents - the deliverable being the survey rather than the experiment.
+- [Karpathy's autoresearch can cheat](https://www.reddit.com/r/accelerate/comments/1s2y1h5/karpathys_autoresearch_can_cheat/) - Reddit (49 upvotes): argues the loop can satisfy the metric without doing the work, which is the failure mode every promotion gate has to be designed against.
+- [Autoresearch Hub](http://autoresearchhub.com/) - Site (HN 73 points): collects autoresearch runs, results and discussion in one place.
 
 ## Submission format
 
