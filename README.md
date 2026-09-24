@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 167 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 175 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
 
 ### Open categories still being seeded
 
@@ -673,7 +673,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
 - [From traces to self-improving agents](https://www.metronis.space/blog/from-traces-to-self-improving-agents) - Blog: describes Metronis Aegis as a closed-loop agent-improvement stack where traces become evals, weak slices become RL environments, useful trajectories write back to memory, and release depends on held-out proof.
 - [AutoResearch vs Classical Hyperparameter Tuning](https://www.weco.ai/blog/autoresearch-vs-classical-hpo) - Blog: reports a NanoChat head-to-head where autoresearch beats Optuna on sample efficiency, cost-adjusted results, and longer-horizon generalization by escaping a fixed search space.
-- [Autoresearch Hub](https://news.ycombinator.com/item?id=47374572) - Hacker News: Karpathy describes an unreleased swarm design where trusted workers verify improvements from a larger untrusted pool to parallelize autoresearch with leaderboard-style proof of progress.
+- [Autoresearch Hub](https://news.ycombinator.com/item?id=47374572) - Hacker News (73 points): discussion of autoresearchhub.com, a hub that collects autoresearch runs, results and open loops in one place.
 - [Greyforge audit of autoresearch architecture](https://github.com/karpathy/autoresearch/discussions/502) - GitHub Discussion: Greyforge Labs publishes a systems audit concluding autoresearch is a clean demo loop but not a serious research architecture, identifying gaps in supervision, routing, memory discipline, artifact durability, and operator control that they are building further up the stack.
 - [Andrej Karpathy on AutoResearch, AI Agents, and Why He Stopped Writing Code (No Priors Interview)](https://pjfp.com/andrej-karpathy-on-autoresearch-ai-agents-and-why-he-stopped-writing-code-full-breakdown-of-his-2026-no-priors-interview/) - Podcast: Karpathy describes the "loopy era" of autonomous systems running experiments, training models, and self-improving without human coding, including details on how he uses autoresearch for 16 hours a day.
 - [Autoresearch-Style Autonomous Prompt Optimization for PlanExe](https://docs.planexe.org/proposals/94-autoresearch-style-prompt-optimization/) - Proposal: adapts Karpathy's autoresearch pattern to autonomous prompt-template optimization, mutating one template at a time, regenerating affected outputs, and scoring results overnight.
@@ -772,7 +772,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Two loop tasks ate four Pro accounts](https://x.com/DIYgod/status/2036343520680878234) - X (Chinese): a practitioner reports that running just two autoresearch loop tasks exhausted four Pro subscriptions, putting the constraint on unattended looping at token spend rather than capability.
 - [Deli_AutoResearch ships three LLM-authored survey papers](https://x.com/victor207755822/status/2062585403136508400) - X: reports a project update in which three complete survey papers, one new and two revised, were authored end to end by LLM agents - the deliverable being the survey rather than the experiment.
 - [Karpathy's autoresearch can cheat](https://www.reddit.com/r/accelerate/comments/1s2y1h5/karpathys_autoresearch_can_cheat/) - Reddit (49 upvotes): argues the loop can satisfy the metric without doing the work, which is the failure mode every promotion gate has to be designed against.
-- [Autoresearch Hub](http://autoresearchhub.com/) - Site (HN 73 points): collects autoresearch runs, results and discussion in one place.
 
 ## Submission format
 
