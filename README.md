@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 109 entries
+- [Scientific Research](categories/scientific-research.md) — 111 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 63 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 167 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 174 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 176 entries
 
 ### Open categories still being seeded
 
@@ -212,6 +212,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [agentic-imodels](https://github.com/csinva/agentic-imodels) - Interpretable data science: agent-interpretable data-science tools that were evolved through an autoresearch loop rather than written by hand.
 - [SCUT-FBP5500 DINOv3](https://github.com/Isaac-Hirsch/scut-fbp5500-dinov3-ce) - Vision research: facial beauty prediction with a DINOv3 ViT-H+ and full-rating-distribution cross-entropy, its recipe tuned by autoresearch.
 - [boldt-posttrain-autoresearch](https://github.com/mayflower/boldt-posttrain-autoresearch) - German-language post-training: runs an AutoResearch loop over a German 1B instruction model - branch, train a specialist, merge, evaluate, promote - with 56 test files behind it.
+- [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) - Interactive science: a recursive-in-recursive self-improvement framework for scientific agent harnesses, where candidates are proposed from each interaction and only the harness that wins on a held-out validation set is inherited by the next cycle.
+- [AutoData: Agentic Search for Pre-training Data Selection](https://arxiv.org/abs/2609.19754) - Data selection: moves the search loop off model code and onto pre-training data, where the agent searches over executable data-curation artifacts instead of training scripts.
 
 ### Software / Systems Optimization
 
@@ -772,6 +774,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Two loop tasks ate four Pro accounts](https://x.com/DIYgod/status/2036343520680878234) - X (Chinese): a practitioner reports that running just two autoresearch loop tasks exhausted four Pro subscriptions, putting the constraint on unattended looping at token spend rather than capability.
 - [Deli_AutoResearch ships three LLM-authored survey papers](https://x.com/victor207755822/status/2062585403136508400) - X: reports a project update in which three complete survey papers, one new and two revised, were authored end to end by LLM agents - the deliverable being the survey rather than the experiment.
 - [Karpathy's autoresearch can cheat](https://www.reddit.com/r/accelerate/comments/1s2y1h5/karpathys_autoresearch_can_cheat/) - Reddit (49 upvotes): argues the loop can satisfy the metric without doing the work, which is the failure mode every promotion gate has to be designed against.
+- [Autoresearch for Robotics Hardware](https://www.reddit.com/r/robotics/comments/1vi3ju0/autoresearch_for_robotics_hardware/) - Reddit r/robotics (298 upvotes, 34 comments): transfers the loop from software to physical hardware, where a discarded experiment costs parts and lead time instead of a rerun.
+- [SIQ-1 Qwen3.6 for autoresearch and autonomous agency](https://www.reddit.com/r/LocalLLaMA/comments/1u88ywc/siq1_qwen36_for_autoresearch_and_autonomous_agency/) - Reddit r/LocalLLaMA (57 upvotes, 29 comments): an open model positioned specifically as the driver for the loop rather than as a general chat model.
 
 ## Submission format
 
