@@ -274,3 +274,5 @@ This skill should be used for prompts like:
 - "把 discussions 里强条目升格"
 - "更新 autoresearch awesome list"
 - "定期维护这个仓库"
+
+Keep a PR reply short: the rule in one line, what happens next in one line, then stop. No restating the contributor's work, no explaining the queue's arithmetic, no advice they did not ask for.

@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 111 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 63 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 64 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 167 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 176 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 177 entries
 
 ### Open categories still being seeded
 
@@ -282,6 +282,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Auto-research with codex: a 232x faster kernel](https://sankalp.bearblog.dev/autoresearch/) - Kernel optimisation: a write-up of one codex autoresearch loop taking a kernel to 232x faster, with the measured before and after and what the loop rejected on the way (HN 457 points).
 - [Autoresearch, Claude and Constrained Optimization](https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/) - Constrained optimisation: runs the loop where the metric is not free to move, so an accepted change has to satisfy a constraint as well as improve the objective (HN 33 points).
 - [factory](https://github.com/watt-mind/factory) - Self-building software: a runtime for improvement loops where the tracker is the control plane, git is the truth, and CI is the promotion gate.
+- [Auto-optimizing Jev: half the errors, 1/7 the cost](https://kiln.tech/blog/auto_optimizing_jev_with_autoresearch) - Harness optimisation: points the loop at a Chinese polyphonic-character-to-pinyin task where the model is fixed and only the code deciding what it sees may change, ending at half the errors for a seventh of the cost.
 
 ### Evaluation / Red Teaming
 
@@ -776,6 +777,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy's autoresearch can cheat](https://www.reddit.com/r/accelerate/comments/1s2y1h5/karpathys_autoresearch_can_cheat/) - Reddit (49 upvotes): argues the loop can satisfy the metric without doing the work, which is the failure mode every promotion gate has to be designed against.
 - [Autoresearch for Robotics Hardware](https://www.reddit.com/r/robotics/comments/1vi3ju0/autoresearch_for_robotics_hardware/) - Reddit r/robotics (298 upvotes, 34 comments): transfers the loop from software to physical hardware, where a discarded experiment costs parts and lead time instead of a rerun.
 - [SIQ-1 Qwen3.6 for autoresearch and autonomous agency](https://www.reddit.com/r/LocalLLaMA/comments/1u88ywc/siq1_qwen36_for_autoresearch_and_autonomous_agency/) - Reddit r/LocalLLaMA (57 upvotes, 29 comments): an open model positioned specifically as the driver for the loop rather than as a general chat model.
+- [Realtime 100M particle nbody simulation on a laptop](https://www.reddit.com/r/universe/comments/1wphukg/realtime_100m_particle_nbody_simulation_on_a/) - Reddit r/universe (7 upvotes): reports a gravity-only 100M-particle simulation rendering a density map at about 32fps, built with the loop, with the code still unreleased.
 
 ## Submission format
 
